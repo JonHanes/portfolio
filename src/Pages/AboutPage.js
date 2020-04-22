@@ -49,10 +49,10 @@ function AboutPage(props) {
                 <li>MySQL DB</li>
                 <li>JavaScript</li>
                 <li>JSON</li>
-                <li>jQuery <i>- Only when essential</i></li>
+                <li>jQuery</li>
                 <li>React</li>
                 <li>Bootstrap</li>
-                <li>Wordpress <i>- Which I'd rather avoid</i></li>
+                <li>Wordpress </li>
                 <li>Visual Studio 2019/VS Code</li>
             </ul>
 
@@ -107,8 +107,9 @@ function AboutPage(props) {
             <ul>
                <li>Finnish - Native</li>
                <li>English - Near native</li>
-               <li>Bulgarian - Great</li>
-               <li>Swedish - Good</li>  
+               <li>Bulgarian - Good</li>
+               <li>Swedish - A2 Level [<i style={{fontSize: "0.85em"}}>This used to be better but I have not practiced in a long time.</i>]</li>
+               
             </ul>
 
             <br/>
