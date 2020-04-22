@@ -28,6 +28,7 @@ class App extends Component {
       title: "Portfolio - Teppo Almgren",
       headerLinks: [
         { title: 'Home', path: '/' },
+        { title: 'Home', path: '/portfolio' },
         { title: 'About', path: '/about' },
         { title: 'Contact', path: '/contact' },
         { title: 'Certificates', path: '/certificates' }
@@ -73,8 +74,8 @@ class App extends Component {
           </Navbar>
 
           {/*#region Routing Logic*/}
-          <Route path="/portfolio" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>}/>
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>}/>
+          <Route path="/portfolio" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>}/>
           <Route path="/about" render={() => <AboutPage title={this.state.about.title} />}/>
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title}/>}/>
           <Route path="/certificates" render={() => <CertificatesPage title={this.state.certificates.title} subTitle={this.state.certificates.subTitle}/>}/>

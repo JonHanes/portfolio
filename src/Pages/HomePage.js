@@ -7,6 +7,7 @@ import Carousel from "../Components/Carousel";
 
 function HomePage(props) {
     return (
+
         <div>
             <Hero title={props.title} subTitle={props.subTitle}/>
             <div className="descriptionText">

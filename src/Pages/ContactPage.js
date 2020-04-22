@@ -38,12 +38,12 @@ class ContactPage extends Component {
                 
                 <br/>
 
-                <p>Please do not hesitate to reach out to me if you want to learn more!<br/>If you feel like I would work well with your team/project, please let me know and I will let you know whether I am interested.<br/>Thank you for your time!
-                    <ContactDetails/>
-                </p>
+                <p>Please do not hesitate to reach out to me if you want to learn more!<br/>If you feel like I would work well with your team/project, please let me know and I will let you know whether I am interested.<br/>Thank you for your time! </p>
+                <ContactDetails/>
+                
                 <div className="imageWrapper">
                 <Image className="centeredImage" src={MyImage} thumbnail/>
-                <p2>Waiting for your feedback.</p2>
+                <h3>Waiting for your feedback.</h3>
                 </div>
                 </Content>
             </div>

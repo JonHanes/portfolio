@@ -12,6 +12,7 @@ function ContactDetails() {
                 </li> 
                 <span className="noticeText"> [Bulgarian number!]</span>
             </ul>
+          
         </div>
     )
 }
