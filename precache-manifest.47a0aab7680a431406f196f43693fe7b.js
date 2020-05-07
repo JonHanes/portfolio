@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e8a2c2022c7ee9e25e4919272b5fa1e8",
+    "revision": "f8da28997d07ad580d925aafd3883270",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "fbec893e3a16da2eba30",
+    "revision": "aa8a47e864225a3c7b32",
     "url": "/portfolio/static/css/2.397eae54.chunk.css"
   },
   {
-    "revision": "56b31a690c3df5117bbd",
+    "revision": "77dfc5e36f4e75cba1c7",
     "url": "/portfolio/static/css/main.271e17b7.chunk.css"
   },
   {
-    "revision": "fbec893e3a16da2eba30",
-    "url": "/portfolio/static/js/2.53cdf9ac.chunk.js"
+    "revision": "aa8a47e864225a3c7b32",
+    "url": "/portfolio/static/js/2.0e14357c.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/portfolio/static/js/2.53cdf9ac.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.0e14357c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "56b31a690c3df5117bbd",
-    "url": "/portfolio/static/js/main.782ca513.chunk.js"
+    "revision": "77dfc5e36f4e75cba1c7",
+    "url": "/portfolio/static/js/main.dd86232d.chunk.js"
   },
   {
     "revision": "6c1d3ad26a766dc494c1",
     "url": "/portfolio/static/js/runtime-main.d597d31e.js"
   },
   {
-    "revision": "71247c150aeeba2d1f9a46d7f2ebe2e1",
-    "url": "/portfolio/static/media/ApartmentImg.71247c15.png"
+    "revision": "9385b3cfd9483e74af5c13f21929c39d",
+    "url": "/portfolio/static/media/ApartmentImg.9385b3cf.png"
   },
   {
     "revision": "de32becee0454ea54cdcaa3e7a06054f",
@@ -58,5 +58,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "153762cfb3007108140ab359487df515",
     "url": "/portfolio/static/media/UnityLogo.153762cf.png"
+  },
+  {
+    "revision": "8f8b79fb7214872c79152039573f8b0b",
+    "url": "/portfolio/static/media/Zenva_BuildMicro-VRGame.8f8b79fb.PNG"
   }
 ]);
