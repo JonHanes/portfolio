@@ -94,7 +94,10 @@ function AboutPage(props) {
             <h3>Future goals</h3>
             I wish to eventually find work in the game development industry.<br/>
             However, for now, the most important thing for me to do is work in the IT-industry so that I may learn more along the way.<br/>
-            I will always take the time to learn more, as there are a lot of things that interest me.<br/>
+            I will always take the time to learn more, as there are a lot of things that interest me.<br/><br/>
+
+            Recently I have started taking additional courses on online sites, as I wish to learn more about Blender, Unity, Unreal Engine and C#/C++.<br/>
+            Not to mention it would be beneficial to have certificates that show that I have the relevant experience.<br/>
             <br/>
 
             <h3>Current Situation</h3>
