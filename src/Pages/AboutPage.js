@@ -47,6 +47,7 @@ function AboutPage(props) {
                 <li>CSS</li>
                 <li>PHP</li>
                 <li>MySQL DB</li>
+                <li>MS SQL DB</li>
                 <li>JavaScript</li>
                 <li>JSON</li>
                 <li>jQuery</li>

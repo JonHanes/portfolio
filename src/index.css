@@ -56,8 +56,8 @@ code {
 
 /*#region ImageGalleryStyles*/
 .gallery-smallImg {
-  width: 171px;
-  height: 180px;
+  width: 171px !important; 
+  height: 180px !important;
 }
 
 .gallery-imageWrapper {
@@ -66,6 +66,7 @@ code {
   border: 1px 1px 1px 1px grey;
   border-style: double;
   width: 20%;
+  height: 13em;
 }
 
 
