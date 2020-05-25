@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f8da28997d07ad580d925aafd3883270",
+    "revision": "49873eda31b3e77ef998ad2701cddcd4",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "aa8a47e864225a3c7b32",
+    "revision": "2bc957efec43fb167331",
     "url": "/portfolio/static/css/2.397eae54.chunk.css"
   },
   {
-    "revision": "77dfc5e36f4e75cba1c7",
-    "url": "/portfolio/static/css/main.271e17b7.chunk.css"
+    "revision": "db25aeb8fc5382575ac2",
+    "url": "/portfolio/static/css/main.ac4f2259.chunk.css"
   },
   {
-    "revision": "aa8a47e864225a3c7b32",
-    "url": "/portfolio/static/js/2.0e14357c.chunk.js"
+    "revision": "2bc957efec43fb167331",
+    "url": "/portfolio/static/js/2.2cf142b5.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/portfolio/static/js/2.0e14357c.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.2cf142b5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "77dfc5e36f4e75cba1c7",
-    "url": "/portfolio/static/js/main.dd86232d.chunk.js"
+    "revision": "db25aeb8fc5382575ac2",
+    "url": "/portfolio/static/js/main.e7aa52b3.chunk.js"
   },
   {
     "revision": "6c1d3ad26a766dc494c1",
@@ -56,11 +56,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/SelfImage2.77a85821.jpg"
   },
   {
+    "revision": "d6600f3833d0c13cc2e83cd8079ee03b",
+    "url": "/portfolio/static/media/Udemy_Unity_2D_Course.d6600f38.jpg"
+  },
+  {
     "revision": "153762cfb3007108140ab359487df515",
     "url": "/portfolio/static/media/UnityLogo.153762cf.png"
   },
   {
     "revision": "8f8b79fb7214872c79152039573f8b0b",
     "url": "/portfolio/static/media/Zenva_BuildMicro-VRGame.8f8b79fb.PNG"
+  },
+  {
+    "revision": "eccb9d6b6e0cdb542cd91c8b2257869b",
+    "url": "/portfolio/static/media/Zenva_IntroToAR.eccb9d6b.PNG"
   }
 ]);
