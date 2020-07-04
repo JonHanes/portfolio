@@ -12,7 +12,7 @@ function AboutPage(props) {
 
             <Content>
             <h3>Who I am</h3>
-            I am a programmer who had a late start.<br/>
+            I am primarily a C#/.NET developer who had a late start.<br/>
             Around 4 years back I took up studies with Java as part of my IT course in Finland.<br/>
             I found myself having a lot of fun with learning how to program, and I began practicing outside of my studies.<br/><br/>
 
@@ -40,6 +40,8 @@ function AboutPage(props) {
                     <ul>
                         <li>C# OOP</li>
                         <li>C# QA - TDD & NUnit Testing</li>
+                        <li>ADO.NET</li>
+                        <li>Entity Framework</li>
                     </ul>
                 <li>C++</li>
                 <li>Java</li>
@@ -103,6 +105,7 @@ function AboutPage(props) {
 
             <h3>Current Situation</h3>
             I am currently studying C# at Software University, Sofia.<br/>
+            At the moment, my studies are centered around the Entity Framework.<br/>
             You can view my current certificates on the <b>Certificates</b> page.
             
             <br/><br/>

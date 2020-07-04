@@ -12,8 +12,9 @@ function HomePage(props) {
             <Hero title={props.title} subTitle={props.subTitle}/>
             <div className="descriptionText">
                 <h3 className="centeredText">
-                    I am primarily a C# developer, studying C# at SoftUni in Bulgaria.<br/>
+                    I am primarily a C#/.NET developer, studying C# at SoftUni in Bulgaria.<br/>
                     My main interests are game development and creating user interfaces, but I also have an interest in web design.<br/>
+                    I find working with backend development quite fun too.
                 </h3>
             </div>
             <Carousel/>

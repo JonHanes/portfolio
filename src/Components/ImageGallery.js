@@ -13,6 +13,7 @@ import CSOOPFEB2020 from "../Assets/Images/Certificates/CS-OOP-FEB2020.png"
 import ZENVA_MICROVR from "../Assets/Images/Certificates/Zenva_BuildMicro-VRGame.PNG"
 import ZENVA_AR_INTRO from "../Assets/Images/Certificates/Zenva_IntroToAR.PNG"
 import UDEMY_2D_Course from "../Assets/Images/Certificates/Udemy_Unity_2D_Course.jpg"
+import MSSQL_Basics from "../Assets/Images/Certificates/CS-DB-MSSQL-MAY2020.png"
 //#endregion
 
 class ImageGallery extends Component {
@@ -52,6 +53,12 @@ class ImageGallery extends Component {
 
                         <br/>
                         <br/>
+
+                        <div className="gallery-imageWrapper">
+                            <Image className="gallery-smallImg" src={MSSQL_Basics} thumbnail />
+                            <h6>Databases Basics - Microsoft SQL Server (6.00/6.00)<br/>
+                            <i>May 2020</i></h6>
+                        </div>
                         
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={ZENVA_MICROVR} thumbnail />
@@ -70,6 +77,8 @@ class ImageGallery extends Component {
                             <h6>Complete C# Unity Developer 2D<br/>
                             <i>May 2020</i></h6>
                         </div>
+
+                        
 
                         <br/>
                         <p className="boldTextWithTopMargin">...and more to come as I'm still studying...</p>
