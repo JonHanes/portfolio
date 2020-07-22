@@ -121,3 +121,15 @@ code {
   padding: 70px 0;
   text-align: center;
 }
+
+.subTitle{
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.explanationText{
+  font-size: 1.2em;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom:3em;
+}

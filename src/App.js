@@ -16,7 +16,7 @@ import Footer from "./Components/Footer";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
-
+import CheatSheet from "./Pages/Cheatsheet";
 import CertificatesPage from "./Pages/CertificatesPage";
 //#endregion
 
@@ -51,6 +51,10 @@ class App extends Component {
       certificates: {
         title: 'Portfolio - Certificates',
         subTitle: 'Certificates I have earned'
+      },
+
+      cheatsheet: {
+        title: 'Portfolio - Cheatsheet',
       }
     }
   }
@@ -68,7 +72,8 @@ class App extends Component {
                 <Link className="nav-link" to="/portfolio"> Home </Link>
                 <Link className="nav-link" to="/about"> About </Link>
                 <Link className="nav-link" to="/contact"> Contact </Link>
-                <Link className="nav-link" to="/certificates"> Certificates </Link>          
+                <Link className="nav-link" to="/certificates"> Certificates </Link>     
+                <Link className="nav-link" to="/cheatsheet"> Cheatsheet </Link>      
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -79,6 +84,7 @@ class App extends Component {
           <Route path="/about" render={() => <AboutPage title={this.state.about.title} />}/>
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title}/>}/>
           <Route path="/certificates" render={() => <CertificatesPage title={this.state.certificates.title} subTitle={this.state.certificates.subTitle}/>}/>
+          <Route path="/cheatsheet" render={() => <CheatSheet title={this.state.cheatsheet.title}/>}/>
           {/*//#endregion */}
 
         <Footer />
