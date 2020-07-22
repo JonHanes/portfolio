@@ -17,6 +17,7 @@ import XML_DTO from '../Assets/Images/Snippets/XML_DTO.PNG';
 
 import XML_HelperEX1 from '../Assets/Images/Snippets/XML_HelperEX1.PNG';
 import XML_HelperEX2 from '../Assets/Images/Snippets/XML_HelperEX2.PNG';
+import XML_HelperEX3 from '../Assets/Images/Snippets/XML_HelperEX3.PNG';
 //#endregion
 
 function Cheatsheet(props) {
@@ -67,10 +68,17 @@ function Cheatsheet(props) {
                             <li>This is the first element in the XML file, the one which the other components are children of.</li>
                         </ul>
                         <h6>[XML Helper] - <b>Exporting</b> data using a DTO</h6>
-                        <li>Usage example:</li>
-                        <Image src={XML_HelperEX2} thumbnail/>
-                        <li>Using LINQ you can limit the amount of data to be passed.</li>
-                        <li>After this, much like before, you use the Serialize function and pass on the root element name ["Products" here].</li>
+                        <ul>
+                            <li>Usage example:</li>
+                            <Image src={XML_HelperEX2} thumbnail/>
+                            <li>Using LINQ you can limit the amount of data to be passed.</li>
+                            <li>After this, much like before, you use the Serialize function and pass on the root element name ["Products" here].</li>
+                        </ul>
+                        <h6>[XML Helper] - Handling XML arrays</h6>
+                        <ul>
+                            <Image src={XML_HelperEX3} thumbnail/>
+                            <li>Pictured here.</li>
+                        </ul>
                 </div>
 
                 <div>
