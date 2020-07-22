@@ -16,6 +16,7 @@ import VS_CS_Version2 from '../Assets/Images/Snippets/VS_Version_CS2.PNG';
 import XML_DTO from '../Assets/Images/Snippets/XML_DTO.PNG';
 
 import XML_HelperEX1 from '../Assets/Images/Snippets/XML_HelperEX1.PNG';
+import XML_HelperEX2 from '../Assets/Images/Snippets/XML_HelperEX2.PNG';
 //#endregion
 
 function Cheatsheet(props) {
@@ -54,14 +55,22 @@ function Cheatsheet(props) {
                         
                     </ul>
                     <h5>XML Helper</h5>
-                    <ul>
-                        <li>XML helper can be downloaded from <a href="https://github.com/StoyanShopov/XmlFacade/blob/master/XmlFacade/XmlFacade/XmlConverter.cs">here</a></li>
+                        <ul>
+                            <li>XML helper can be downloaded from <a href="https://github.com/StoyanShopov/XmlFacade/blob/master/XmlFacade/XmlFacade/XmlConverter.cs">here</a></li>
+                        </ul>
+                        <h6>[XML Helper] - <b>Importing</b> data using a DTO</h6>
+                        <ul>
+                            <li>Usage example:</li>
+                            <Image src={XML_HelperEX1} thumbnail/>
+                            <li>It takes in the two parameters, the string which was read from a file, and then the root element's name.</li>
+                            <li>For example a library would be the root element of a collection of books.</li>
+                            <li>This is the first element in the XML file, the one which the other components are children of.</li>
+                        </ul>
+                        <h6>[XML Helper] - <b>Exporting</b> data using a DTO</h6>
                         <li>Usage example:</li>
-                        <Image src={XML_HelperEX1} thumbnail/>
-                        <li>It takes in the two parameters, the string which was read from a file, and then the root element's name.</li>
-                        <li>For example a library would be the root element of a collection of books.</li>
-                        <li>This is the first element in the XML file, the one which the other components are children of.</li>
-                    </ul>
+                        <Image src={XML_HelperEX2} thumbnail/>
+                        <li>Using LINQ you can limit the amount of data to be passed.</li>
+                        <li>After this, much like before, you use the Serialize function and pass on the root element name ["Products" here].</li>
                 </div>
 
                 <div>
@@ -106,7 +115,7 @@ function Cheatsheet(props) {
                     <br/>
                     <h5>Git commands</h5><br/>
                     <ul>
-                        <li><b>git add .</b> - adds all files to be deployed</li>
+                        <li><b>git add .</b> - Adds all files to be deployed</li>
                         <li><b>git commit -m "<i>Text explaining the changes</i>"</b> - Create a commit to the repository</li>
                         <li><b>npm run deploy</b> - Deploy the files you have been working on to the repository</li>
                         <li><b>git push -u origin master</b> - Push the changes to the master repository</li>
