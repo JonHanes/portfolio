@@ -18,6 +18,8 @@ import XML_DTO from '../Assets/Images/Snippets/XML_DTO.PNG';
 import XML_HelperEX1 from '../Assets/Images/Snippets/XML_HelperEX1.PNG';
 import XML_HelperEX2 from '../Assets/Images/Snippets/XML_HelperEX2.PNG';
 import XML_HelperEX3 from '../Assets/Images/Snippets/XML_HelperEX3.PNG';
+
+import JS_Interpolation from '../Assets/Images/Snippets/JS_Interpolation.PNG';
 //#endregion
 
 function Cheatsheet(props) {
@@ -130,6 +132,33 @@ function Cheatsheet(props) {
                     </ul>
                 </div>
 
+
+                <br/><br/>
+                <h4 className="subTitle">JavaScript</h4>
+
+                <div>
+                    <h5>JavaScript - String interpolation</h5>
+                    <ul>
+                        <li>This can be achieved by wrapping the string in ` quotations [Template literals].</li>
+                        <li>Example usage:</li>
+                        <Image src={JS_Interpolation} thumbnail/>
+                        <li>More information can be found <a href="https://dmitripavlutin.com/string-interpolation-in-javascript/">here</a></li>
+                    </ul>
+                </div>
+                
+                <h4>Misc</h4>
+
+                <br/>
+                <h4 className="subTitle">Useful commands</h4>
+                <ul>
+                    <li>Some of these are likely self-explanatory...</li>
+                </ul>
+
+                <div>
+                    <h5>Command Line</h5>
+                    <h6>Command Line - Check Node.js version <b>[node -v]</b></h6><br/>
+                </div>
+                    
             </Content>
         </div>
     )

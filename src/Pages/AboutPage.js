@@ -77,8 +77,10 @@ function AboutPage(props) {
             I have worked with Unity in a purely hobbyist capacity, watching tutorials and recreating projects by following along.<br/>
             I have a relative amount of familiarity with Unity and how to work with C# scripting and the Unity interface.<br/>
             In the near future, I want to make a VR-project in Unity, as I find there's a lot of potential in this.<br/>
-            Once my C++ studies start up again, I hope to find the time for Unreal Engine as well.<br/>
+            Once my C++ studies start up again, I hope to find the time for Unreal Engine as well.<br/><br/>
 
+            I briefly checked out Ruby, the syntax seems reasonable and I'm all for the idea of creating modules for better organization.<br/>
+            Currently trying to orient myself to learn Laravel, as well as learn more about Node.js and Express.js.
             <br/><br/>
 
             <h3>Customer Service Experience</h3>
