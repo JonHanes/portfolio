@@ -20,6 +20,7 @@ import XML_HelperEX2 from '../Assets/Images/Snippets/XML_HelperEX2.PNG';
 import XML_HelperEX3 from '../Assets/Images/Snippets/XML_HelperEX3.PNG';
 
 import JS_Interpolation from '../Assets/Images/Snippets/JS_Interpolation.PNG';
+import JS_Express_BP from '../Assets/Images/Snippets/JS_Express_BP.PNG';
 //#endregion
 
 function Cheatsheet(props) {
@@ -31,6 +32,8 @@ function Cheatsheet(props) {
                 <h4 className="explanationText">Very much a work in progress.<br/>Functions to add:<br/>
                 <ul>
                     <li>Collapsible elements [Useful when this grows in scale]</li>
+                    <li>Add styling to the divs I am currently using, at the very least add a bottom margin so that they are further apart from each other.<br/>
+                    Currently this effect is achieved using only whitespaces.</li>
                 </ul>
                 </h4>
 
@@ -144,9 +147,35 @@ function Cheatsheet(props) {
                         <Image src={JS_Interpolation} thumbnail/>
                         <li>More information can be found <a href="https://dmitripavlutin.com/string-interpolation-in-javascript/">here</a></li>
                     </ul>
+                    <br/>
+                    <h5>JavaScript - package.json file</h5>
+                    <ul>
+                        <li>Extremely convenient file containing metadata related to the application.</li>
+                        <li>Easy way to track dependencies between libraries.</li>
+                    </ul>
+                    <br/>
+
+                    <h5>Node.js</h5>
+                    <h6>Express.js</h6>
+                    <ul>
+                        <li>Express is a very handy framework for Node.js</li>
+                        <li>It simplifies API calls and error handling.</li>
+                        <li>Used together with <a href="https://www.npmjs.com/package/body-parser">body-parser</a> you can directly input a JSON body for your API calls.</li>
+                        <li>Usage example: </li>
+                        <li><i>const app = express();</i></li>
+                    </ul>
+                    <h6>Body-Parser - Setup</h6>
+                    <ul>
+                        <li>To use body parser, you first have to use something like this.</li>
+                        <li><i>const bodyParser = require('body-parser');</i></li>
+                        <li>After this, ensure that your express connection is using the body-parser to handle the requests.</li>
+                        <Image src={JS_Express_BP} thumbnail/>
+                        
+                    </ul>
                 </div>
                 
-                <h4>Misc</h4>
+                <br/><br/>
+                <h4 className="subTitle">Misc</h4>
 
                 <br/>
                 <h4 className="subTitle">Useful commands</h4>
