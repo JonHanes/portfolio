@@ -34,6 +34,7 @@ function Cheatsheet(props) {
                     <li>Collapsible elements [Useful when this grows in scale]</li>
                     <li>Add styling to the divs I am currently using, at the very least add a bottom margin so that they are further apart from each other.<br/>
                     Currently this effect is achieved using only whitespaces.</li>
+                    <li>A navbar that is fixed to either side.</li>
                 </ul>
                 </h4>
 
@@ -123,19 +124,6 @@ function Cheatsheet(props) {
                 </ul>
                 </div>
                 
-                <div>
-                <h4 className="subTitle">GitHub</h4>
-                    <br/>
-                    <h5>Git commands</h5><br/>
-                    <ul>
-                        <li><b>git add .</b> - Adds all files to be deployed</li>
-                        <li><b>git commit -m "<i>Text explaining the changes</i>"</b> - Create a commit to the repository</li>
-                        <li><b>npm run deploy</b> - Deploy the files you have been working on to the repository</li>
-                        <li><b>git push -u origin master</b> - Push the changes to the master repository</li>
-                    </ul>
-                </div>
-
-
                 <br/><br/>
                 <h4 className="subTitle">JavaScript</h4>
 
@@ -170,7 +158,16 @@ function Cheatsheet(props) {
                         <li><i>const bodyParser = require('body-parser');</i></li>
                         <li>After this, ensure that your express connection is using the body-parser to handle the requests.</li>
                         <Image src={JS_Express_BP} thumbnail/>
-                        
+                    </ul>
+
+                    <h6>Dotenv</h6>
+                    <ul>
+                        <li>Dotenv allows you to set up your own environment values without having to pass them into the package.json file.</li>
+                        <li>Make sure you have included this into your project <i>require('dotenv').config();</i></li>
+                        <li>Once you have it set up, all you have to do is add an .env file into your solution and input the data like this, for example.<br/>
+                        <i>PORT=3000<br/>TEST=test</i></li>
+                        <li>The best practice with Dotenv is to keep only environment values that are not sensitive here.<br/>
+                        If sensitive data needs to be input here, it is best to send your clients a sample .env file that they need to fill in with their own information.</li>
                     </ul>
                 </div>
                 
@@ -186,6 +183,19 @@ function Cheatsheet(props) {
                 <div>
                     <h5>Command Line</h5>
                     <h6>Command Line - Check Node.js version <b>[node -v]</b></h6><br/>
+                </div>
+
+                <br/><br/>
+                <div>
+                <h4 className="subTitle">GitHub</h4>
+                    <br/>
+                    <h5>Git commands</h5><br/>
+                    <ul>
+                        <li><b>git add .</b> - Adds all files to be deployed</li>
+                        <li><b>git commit -m "<i>Text explaining the changes</i>"</b> - Create a commit to the repository</li>
+                        <li><b>npm run deploy</b> - Deploy the files you have been working on to the repository</li>
+                        <li><b>git push -u origin master</b> - Push the changes to the master repository</li>
+                    </ul>
                 </div>
                     
             </Content>
