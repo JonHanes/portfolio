@@ -1,4 +1,9 @@
 import React from 'react'
+import Image from 'react-bootstrap/Image';
+
+//#region Internal Dependencies
+import PHP_Artisan_Iteration from '../../Assets/Images/Snippets/PHP_Artisan_Iteration.png';
+//#endregion
 
 function CS_PHP(props) {
     return (
@@ -71,7 +76,37 @@ function CS_PHP(props) {
                     </li>
                 <li>After you have run that first query for getting the flights, you can then find by index using the following.<br/>
                 <b>$flights[1];</b></li>
+                <li>You can find records by using the following as well.<br/>
+                <i>$res = App\Flight::find(1)</i><br/>
+                This allows you to get a reference to the record and edit it like this.<br/>
+                $res-{">"}destination = 'Finland'<br/>
+                After this you can proceed with saving the changes.</li>
                 </ul>
+            </ul>
+
+            <b>Filtering records using Tinker</b>
+            <ul>
+                <li>You can use the where-clause in Laravel as well.<br/>
+                <i>App\Flight::where('destination', 'Finland')-{">"}get()-{">"}first();</i>
+                <br/>The <b>first-clause</b> is optional and if you want to return an array then remove this.</li>
+            </ul>
+
+            <b>Iterating through records using Tinker</b>
+            <ul>
+                <li>Foreach shown below.</li>
+                <li><Image src={PHP_Artisan_Iteration} thumbnail/></li>
+                <li><i>$flights-{">"}<b>first();</b></i> is also a valid command, as well as <b>last</b>.</li>
+            </ul>
+
+            <b>Updating records using Tinker</b>
+            <ul>
+                <li>The records can be updated using the tinker with the following commands.<br/>
+                <b>$account = new App\Account();</b><br/>
+                After this, you will need to give the new record information to store.<br/>
+                <i>$account-{">"}name = 'Saving account';</i><br/>
+                To verify what data was stored inside the new model, print it out using <i>$account</i>
+                <li>Finally, saving the changes can be done with the command <i>$account-{">"}save();</i></li>
+                </li>
             </ul>
             <br/><br/>
         </div> 
@@ -79,4 +114,3 @@ function CS_PHP(props) {
 }
 
 export default CS_PHP;
-
