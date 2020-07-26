@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.057a7418.chunk.css",
-    "main.js": "/portfolio/static/js/main.b0e95468.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.b0e95468.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.64c8d17f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.64c8d17f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.d597d31e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.d597d31e.js.map",
     "static/css/2.397eae54.chunk.css": "/portfolio/static/css/2.397eae54.chunk.css",
-    "static/js/2.673c900e.chunk.js": "/portfolio/static/js/2.673c900e.chunk.js",
-    "static/js/2.673c900e.chunk.js.map": "/portfolio/static/js/2.673c900e.chunk.js.map",
+    "static/js/2.b8d33844.chunk.js": "/portfolio/static/js/2.b8d33844.chunk.js",
+    "static/js/2.b8d33844.chunk.js.map": "/portfolio/static/js/2.b8d33844.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.57999ed00172880aaf3edb74a48ccde1.js": "/portfolio/precache-manifest.57999ed00172880aaf3edb74a48ccde1.js",
+    "precache-manifest.cdd2854858547d41e165fa65474ecc2f.js": "/portfolio/precache-manifest.cdd2854858547d41e165fa65474ecc2f.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.397eae54.chunk.css.map": "/portfolio/static/css/2.397eae54.chunk.css.map",
     "static/css/main.057a7418.chunk.css.map": "/portfolio/static/css/main.057a7418.chunk.css.map",
-    "static/js/2.673c900e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.673c900e.chunk.js.LICENSE.txt",
+    "static/js/2.b8d33844.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b8d33844.chunk.js.LICENSE.txt",
     "static/media/ApartmentImg.png": "/portfolio/static/media/ApartmentImg.9385b3cf.png",
     "static/media/CPP-PB-JUN2019.png": "/portfolio/static/media/CPP-PB-JUN2019.de32bece.png",
     "static/media/CS-ADV-JAN2020.png": "/portfolio/static/media/CS-ADV-JAN2020.7babf186.png",
@@ -24,6 +24,7 @@
     "static/media/JS_Escape.PNG": "/portfolio/static/media/JS_Escape.2660ae86.PNG",
     "static/media/JS_Express_BP.PNG": "/portfolio/static/media/JS_Express_BP.d0790fef.PNG",
     "static/media/JS_Interpolation.PNG": "/portfolio/static/media/JS_Interpolation.b505bd38.PNG",
+    "static/media/Laravel_Controller_CreateRecord.PNG": "/portfolio/static/media/Laravel_Controller_CreateRecord.aab05222.PNG",
     "static/media/PackageManager.jpg": "/portfolio/static/media/PackageManager.98aaf6c4.jpg",
     "static/media/PowershellPrompt.jpg": "/portfolio/static/media/PowershellPrompt.82ae60b6.jpg",
     "static/media/React_HandleClick.PNG": "/portfolio/static/media/React_HandleClick.d3fd7eb2.PNG",
@@ -45,8 +46,8 @@
   "entrypoints": [
     "static/js/runtime-main.d597d31e.js",
     "static/css/2.397eae54.chunk.css",
-    "static/js/2.673c900e.chunk.js",
+    "static/js/2.b8d33844.chunk.js",
     "static/css/main.057a7418.chunk.css",
-    "static/js/main.b0e95468.chunk.js"
+    "static/js/main.64c8d17f.chunk.js"
   ]
 }
