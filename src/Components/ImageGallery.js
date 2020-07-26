@@ -13,6 +13,7 @@ import CSFUNDSEP2019 from "../Assets/Images/Certificates/CS-FUND-SEP2019.png"
 import CSADVJAN2020 from "../Assets/Images/Certificates/CS-ADV-JAN2020.png"
 import CSOOPFEB2020 from "../Assets/Images/Certificates/CS-OOP-FEB2020.png"
 import MSSQL_Basics from "../Assets/Images/Certificates/CS-DB-MSSQL-MAY2020.png"
+import Unity3DEssentials2020 from "../Assets/Images/Certificates/Unity3D_Essentials_JUL2020.png"
 //Zenva
 import ZENVA_MICROVR from "../Assets/Images/Certificates/Zenva_BuildMicro-VRGame.PNG"
 import ZENVA_AR_INTRO from "../Assets/Images/Certificates/Zenva_IntroToAR.PNG"
@@ -66,7 +67,14 @@ class ImageGallery extends Component {
                             <h6>Databases Basics - Microsoft SQL Server (6.00/6.00)<br/>
                             <i>May 2020</i></h6>
                         </div>
+
                         
+                        <div className="gallery-imageWrapper">
+                            <Image className="gallery-smallImg" src={Unity3DEssentials2020} thumbnail />
+                            <h6>Unity 3D Essentials<br/>
+                            <i>July 2020</i></h6>
+                        </div>
+
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={ZENVA_MICROVR} thumbnail />
                             <h6>Zenva - Build a Micro-VR Game<br/>
@@ -79,22 +87,20 @@ class ImageGallery extends Component {
                             <i>April 2020</i></h6>
                         </div>
 
+                        <br/>
+                        <br/>
+
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={ZENVA_NodeJS_Express_BGN} thumbnail />
                             <h6>Zenva - Node.js and Express for Beginners<br/>
                             <i>July 2020</i></h6>
                         </div>
                         
-                        <br/>
-                        <br/>
-
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={UDEMY_2D_Course} thumbnail />
                             <h6>Complete C# Unity Developer 2D<br/>
                             <i>May 2020</i></h6>
                         </div>
-
-                        
 
                         <br/>
                         <p className="boldTextWithTopMargin">...and more to come as I'm still studying...</p>
