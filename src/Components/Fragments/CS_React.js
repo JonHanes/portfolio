@@ -7,9 +7,9 @@ import React_HandleClick from '../../Assets/Images/Snippets/React_HandleClick.PN
 
 function CS_React(props) {
     return (
-    <div id="reactNotes"> 
-        <h4 className="subTitle">React</h4>
-        <h5>React - Handle change</h5>
+    <div className="fragment" id="reactNotes"> 
+        <h4 className="primaryTopic">React</h4>
+        <h5 className="secondaryTopic">React - Handle change</h5>
         <ul>
             <li>The handle change function is called in React whenever a change is detected in the input field.</li>
             <li>Example usage:<br/>
@@ -25,8 +25,6 @@ function CS_React(props) {
                     </li>
                 </ul>
         </ul>
-        
-        <br/><br/>
     </div>
     )
 }

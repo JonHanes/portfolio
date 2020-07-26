@@ -2,20 +2,20 @@ import React from 'react'
 
 function CS_Misc(props) {
     return (
-        <div id="miscNotes">
-            <h4 className="subTitle">Misc</h4>
+        <div className="fragment" id="miscNotes">
+            <h4 className="primaryTopic">Misc</h4>
             <br/>
-            <h4 className="subTitle">Useful commands</h4>
+            <h5 className="secondaryTopic">Useful commands</h5>
             <ul>
                 <li>Some of these are likely self-explanatory...</li>
             </ul>
 
-            <div>
-                <h5>Command Line</h5>
-                <h6>Command Line - Check Node.js version <b>[node -v]</b></h6><br/>
+            <div className="indented">
+                <h5 className="tertiaryTopic">Command Line</h5>
+                <ul>
+                    <li>Command Line - Check Node.js version <b>[node -v]</b></li>
+                </ul>
             </div>
-
-            <br/><br/>
         </div> 
     )
 }

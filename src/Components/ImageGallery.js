@@ -38,25 +38,25 @@ class ImageGallery extends Component {
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={CPPPBJune2019} thumbnail/>
                             <h6>C++ Programming Basics Certificate (6.00/6.00) <br/>
-                            <i>June 2019</i></h6>
+                            <i>July 2019</i></h6>
                         </div>
     
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={CSFUNDSEP2019} thumbnail />
                             <h6>C# Fundamentals Certificate (6.00/6.00) <br/>
-                            <i>September 2019</i></h6>
+                            <i>December 2019</i></h6>
                         </div>
     
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={CSADVJAN2020} thumbnail />
                             <h6>C# Advanced Certificate (6.00/6.00) <br/>
-                            <i>January 2020</i></h6>
+                            <i>March 2020</i></h6>
                         </div>
     
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={CSOOPFEB2020} thumbnail />
                             <h6>C# OOP Certificate (6.00/6.00) <br/>
-                            <i>February 2020</i></h6>
+                            <i>April 2020</i></h6>
                         </div>
 
                         <br/>
@@ -65,13 +65,13 @@ class ImageGallery extends Component {
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={MSSQL_Basics} thumbnail />
                             <h6>Databases Basics - Microsoft SQL Server (6.00/6.00)<br/>
-                            <i>May 2020</i></h6>
+                            <i>June 2020</i></h6>
                         </div>
 
                         
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={Unity3DEssentials2020} thumbnail />
-                            <h6>Unity 3D Essentials<br/>
+                            <h6>Unity 3D Essentials (6.00/6.00 - First place)<br/>
                             <i>July 2020</i></h6>
                         </div>
 

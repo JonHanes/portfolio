@@ -7,12 +7,11 @@ import PHP_Artisan_Iteration from '../../Assets/Images/Snippets/PHP_Artisan_Iter
 
 function CS_PHP(props) {
     return (
-        <div id="phpNotes">
-            <h4 className="subTitle">PHP</h4>
-            <br/>
-            <h5>Laravel</h5>
-            <h6>PHP Artisan</h6>
-            <b>Commands</b>
+        <div className="fragment" id="phpNotes">
+            <h4 className="primaryTopic">PHP</h4>
+            <h5 className="secondaryTopic">Laravel</h5>
+            <h6 className="tertiaryTopic">PHP Artisan</h6>
+            <b className="quaternaryTopic">Commands</b>
             <ul>
                 <li>Creating a migration - <b>php artisan make:migration</b> [<i>Name of the table</i>]<br/>
                 Something to note, Laravel creates the boilerplate code based on the name you gave it.<br/>
@@ -29,7 +28,7 @@ function CS_PHP(props) {
                 This convention will allow you to only change one particular column of the table, with the included boilerplate code.
                 </li>
             </ul>
-            <b>When creating migrations [with example usage]</b>
+            <b className="quaternaryTopic">When creating migrations [with example usage]</b>
             <ul>
                 <li>$table-{">"}<b>increments</b>('id');<br/>
                 This ensures that the ID value of the table is auto-incremented.</li>
@@ -48,21 +47,41 @@ function CS_PHP(props) {
                 This is by default in the migration settings (the <b>down</b> function.)<br/>
                 Upon making slight changes, it might be best to ensure that the down function only drops the newly created tables.</li>
             </ul>
-            <b>When modifying columns in migrations [with example usage]</b>
+            <b className="quaternaryTopic">When modifying columns in migrations [with example usage]</b>
             <ul>
                 <li>$table-{">"}<b>dropColumn('title')</b>; || $table-{">"}dropColumn(['title', 'content'])<br/>
                 Drops the column(s) from the database upon this function being called.</li>
                 <li><b>Schema::rename</b>('studentsTeachers', 'students_teachers')<br/>
                 Allows the renaming of columns.</li>
             </ul>
-            <b>Model creation - Eloquent</b>
+            <b className="quaternaryTopic">Model creation - Eloquent</b>
             <ul>
                 <li>Much like Entity Framework, this ORM system allows you to work with DB records through the use of models, corresponding to these records.<br/>
                 These models can then be interacted with directly, instead of writing raw SQL.</li>
                 <li>Model creation - <b>php artisan make:model Flight</b></li>
                 <ul><li>Models are then stored under the <b>app</b> folder, and extend the Model template.</li></ul>
             </ul>
-            <b>Fetching records using Tinker</b>
+
+            <h6 className="quaternaryTopic">Controllers</h6>
+            <ul>
+                <li>You can create a Controller by using the following command.<br/>
+                <i>php artisan make:controller [NameOfController] --resource</i></li>
+                <li>The controller will help you with routing.</li>
+                <li>Place something like the following into the routes folder, into web.php<br/>
+                    <i>{"Route::resource('/accounts', 'AccountController')->only(['index', 'show']);"}</i>
+                        <ul>
+                            <li>The keyword <b>/accounts</b> denotes the URL extension that the controller is managing.</li>
+                            <li><b>AccountController</b> in this case is the controller in charge of handling this.</li>
+                            <li>The <b>only</b> keyword denotes that only some of the functions inside the AccountController should be used; <br/>
+                            It seems that for this particular example there is no need to edit the records.</li>
+                        </ul>
+                    </li>
+            </ul>
+
+            <h5 className="tertiaryTopic">Tinker</h5>
+            <br/>
+
+            <b className="quaternaryTopic">Fetching records using Tinker</b>
             <ul>
                 <li>Run the command <b>php artisan tinker</b>.</li>
                 <li>Fetch the records by using the template.<br/>
@@ -84,21 +103,21 @@ function CS_PHP(props) {
                 </ul>
             </ul>
 
-            <b>Filtering records using Tinker</b>
+            <b className="quaternaryTopic">Filtering records using Tinker</b>
             <ul>
                 <li>You can use the where-clause in Laravel as well.<br/>
                 <i>App\Flight::where('destination', 'Finland')-{">"}get()-{">"}first();</i>
                 <br/>The <b>first-clause</b> is optional and if you want to return an array then remove this.</li>
             </ul>
 
-            <b>Iterating through records using Tinker</b>
+            <b className="quaternaryTopic">Iterating through records using Tinker</b>
             <ul>
                 <li>Foreach shown below.</li>
                 <li><Image src={PHP_Artisan_Iteration} thumbnail/></li>
                 <li><i>$flights-{">"}<b>first();</b></i> is also a valid command, as well as <b>last</b>.</li>
             </ul>
 
-            <b>Updating records using Tinker</b>
+            <b className="quaternaryTopic">Updating records using Tinker</b>
             <ul>
                 <li>The records can be updated using the tinker with the following commands.<br/>
                 <b>$account = new App\Account();</b><br/>
@@ -108,7 +127,6 @@ function CS_PHP(props) {
                 <li>Finally, saving the changes can be done with the command <i>$account-{">"}save();</i></li>
                 </li>
             </ul>
-            <br/><br/>
         </div> 
     )
 }

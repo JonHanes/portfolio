@@ -2,10 +2,9 @@ import React from 'react'
 
 function CS_GitHub(props) {
     return (
-        <div id="gitHub">
-            <h4 className="subTitle">GitHub</h4>
-                <br/>
-                <h5>Git commands</h5><br/>
+        <div className="fragment" id="gitHub">
+            <h4 className="primaryTopic">GitHub</h4>
+                <h5 className="secondaryTopic">Git commands</h5><br/>
                 <ul>
                     <li><b>git add .</b> - Adds all files to be deployed</li>
                     <li><b>git commit -m "<i>Text explaining the changes</i>"</b> - Create a commit to the repository</li>

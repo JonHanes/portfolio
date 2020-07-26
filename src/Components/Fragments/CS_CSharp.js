@@ -16,11 +16,11 @@ import XML_HelperEX3 from '../../Assets/Images/Snippets/XML_HelperEX3.PNG';
 
 function CS_CSharp(props) {
     return (
+        <div className="fragment">
+            <h4 className="primaryTopic">C#/.NET</h4>
+        <h4 className="secondaryTopic">General</h4>
         <div>
-            <h4>C#/.NET</h4><br/>
-        <h4 className="subTitle">General</h4>
-        <div>
-            <h5>Visual Studio - Update C# Version</h5><br/>
+            <h5 className="tertiaryTopic">Visual Studio - Update C# Version</h5><br/>
             <ul>
                 <li> Find the main project file, .csproj.
                 </li>
@@ -30,19 +30,19 @@ function CS_CSharp(props) {
                 <li>Change the version according to the needs of your project.</li>
             </ul>
 
-            <h5>XML Conversions using a DTO.</h5>
+        <h4 className="secondaryTopic">XML</h4>
+            <h5 className="tertiaryTopic">XML Conversions using a DTO.</h5>
             <ul>
                 <li>You can use [XmlType("<i>product</i>")] before the class declaration so that the class <i>Product</i> can be mapped to the XML element, <i>product</i>.</li>
                 <li>As for properties, you can use [XmlElement("<i>name</i>")] to tie the <i>Name</i> property inside the class.</li>
                 <Image src={XML_DTO} thumbnail/>
-                <li><i>Example provided</i></li>
-                
+                <li><i>Example provided</i></li>         
             </ul>
-            <h5>XML Helper</h5>
+            <h5 className="tertiaryTopic">XML Helper</h5>
                 <ul>
                     <li>XML helper can be downloaded from <a href="https://github.com/StoyanShopov/XmlFacade/blob/master/XmlFacade/XmlFacade/XmlConverter.cs">here</a></li>
                 </ul>
-                <h6>[XML Helper] - <b>Importing</b> data using a DTO</h6>
+                <h6 className="quaternaryTopic">[XML Helper] - <b>Importing</b> data using a DTO</h6>
                 <ul>
                     <li>Usage example:</li>
                     <Image src={XML_HelperEX1} thumbnail/>
@@ -50,14 +50,14 @@ function CS_CSharp(props) {
                     <li>For example a library would be the root element of a collection of books.</li>
                     <li>This is the first element in the XML file, the one which the other components are children of.</li>
                 </ul>
-                <h6>[XML Helper] - <b>Exporting</b> data using a DTO</h6>
+                <h6 className="quaternaryTopic">[XML Helper] - <b>Exporting</b> data using a DTO</h6>
                 <ul>
                     <li>Usage example:</li>
                     <Image src={XML_HelperEX2} thumbnail/>
                     <li>Using LINQ you can limit the amount of data to be passed.</li>
                     <li>After this, much like before, you use the Serialize function and pass on the root element name ["Products" here].</li>
                 </ul>
-                <h6>[XML Helper] - Handling XML arrays</h6>
+                <h6 className="quaternaryTopic">[XML Helper] - Handling XML arrays</h6>
                 <ul>
                     <Image src={XML_HelperEX3} thumbnail/>
                     <li>Pictured here.</li>
@@ -65,10 +65,10 @@ function CS_CSharp(props) {
         </div>
 
         <div>
-        <h4 className="subTitle">EF Core</h4>
-        <br/>
-        <h5>Database Creation</h5><br/>
-        <b>Code-First</b><br/>
+        <h4 className="secondaryTopic">EF Core</h4>
+        <h5 className="tertiaryTopic">Database Creation</h5>
+
+        <b className="quaternaryTopic">Code-First</b>
         <ul>
             <li>Note: You will need to install some Microsoft packages to initialize the migrations. <br/>[For example Microsoft.EntityFrameworkCore.SqlServer & Microsoft.EntityFrameworkCore.Design]</li>
             <li>Create the appropriate classes in your IDE.</li>
@@ -95,7 +95,7 @@ function CS_CSharp(props) {
             </li>   
         </ul>
 
-        <b>Database-First</b><br/>
+        <b className="quaternaryTopic">Database-First</b><br/>
         <ul>
             <li>
                 To begin, use Shift+Right click to get the <b>Open PowerShell window here</b> option when in your source folder.
@@ -107,7 +107,6 @@ function CS_CSharp(props) {
                 <li>The other parts of this command specify where the models should be created (a subfolder)</li>
         </ul>
         </div>
-        <br/><br/>
         </div>
         )
     }
