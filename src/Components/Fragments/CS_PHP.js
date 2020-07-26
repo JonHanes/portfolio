@@ -3,6 +3,7 @@ import Image from 'react-bootstrap/Image';
 
 //#region Internal Dependencies
 import PHP_Artisan_Iteration from '../../Assets/Images/Snippets/PHP_Artisan_Iteration.png';
+import Laravel_CreateRecord from '../../Assets/Images/Snippets/Laravel_Controller_CreateRecord.PNG';
 //#endregion
 
 function CS_PHP(props) {
@@ -10,6 +11,9 @@ function CS_PHP(props) {
         <div className="fragment" id="phpNotes">
             <h4 className="primaryTopic">PHP</h4>
             <h5 className="secondaryTopic">Laravel</h5>
+
+            <div id="phpArtisan">
+
             <h6 className="tertiaryTopic">PHP Artisan</h6>
             <b className="quaternaryTopic">Commands</b>
             <ul>
@@ -74,10 +78,37 @@ function CS_PHP(props) {
                             <li><b>AccountController</b> in this case is the controller in charge of handling this.</li>
                             <li>The <b>only</b> keyword denotes that only some of the functions inside the AccountController should be used; <br/>
                             It seems that for this particular example there is no need to edit the records.</li>
+                            <li>To quickly test if this works, you can try writing the following into the Controller's index method.<br/>
+                            <i>dd(\App\Account::all())</i>
+                                <ul>
+                                    <li>This should let you see all records in the database when accessing the /accounts URL.</li>
+                                    <li>To make this slightly less troublesome, use the App namespace ={">"} <i>use App\Account;</i> and you will no longer have to write the App\ part.</li>
+                                </ul>
+                           </li>
                         </ul>
                     </li>
+                    <li>You can return a view from the created Controller by using the following example command.<br/>
+                    <i>{"return view('accounts.index', ['accounts'] => Account::all()])"}</i>
+                        <ul>
+                            <li>In this example we gave, the view was actually located in a subfolder <i>accounts</i> inside the <i>views</i> folder.<br/>
+                            This is why the view is written as <i>accounts.index</i></li>
+                            <li>Upon calling the view, we pass an array of elements, the accounts, fetched from the database.</li>
+                            <li>The <b>index.blade.php</b> file that the information was fetched to, iterates over the elements.</li>       
+                        </ul>
+                    </li>
+                    <li>Creating new records through forms necessitates the use of <i>Illuminate\Http\Request</i><br/>
+                    The create function in your controller should link you to the view with the form.<br/>
+                    The form should then send the data passed inside to the <b>store</b> function in the controller, alongside the csrf-token.<br/>
+                    The Controller can then handle the request.</li>
+                    <li>Example provided below.<br/>
+                    <i>{"public function store(Request $req) {dd($req->all());}"}</i><br/>
+                    This function prints out all the information received from the POST-statement.</li>
+                    <li>Saving the record should work something like this.<br/>
+                    <Image src={Laravel_CreateRecord} thumbnail/></li>
             </ul>
+            </div> {/*PHPArtisan Ends*/}
 
+            <div id="tinker">
             <h5 className="tertiaryTopic">Tinker</h5>
             <br/>
 
@@ -127,6 +158,8 @@ function CS_PHP(props) {
                 <li>Finally, saving the changes can be done with the command <i>$account-{">"}save();</i></li>
                 </li>
             </ul>
+            </div>  {/*Tinker DIV ends*/}
+        
         </div> 
     )
 }
