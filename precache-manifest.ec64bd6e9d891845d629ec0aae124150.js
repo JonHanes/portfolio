@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e76fa6f3de78ef1d5c0dab9068f0fd66",
+    "revision": "a82bc1238a9396fd09cb77924eaba3f4",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "72351c371d7dcd172e43",
+    "revision": "64e5af2fb57e439d5aab",
     "url": "/portfolio/static/css/2.397eae54.chunk.css"
   },
   {
-    "revision": "70a3644b46621cbd5e0c",
+    "revision": "31661d74e945498c08b8",
     "url": "/portfolio/static/css/main.b37e4f16.chunk.css"
   },
   {
-    "revision": "72351c371d7dcd172e43",
-    "url": "/portfolio/static/js/2.6c56af72.chunk.js"
+    "revision": "64e5af2fb57e439d5aab",
+    "url": "/portfolio/static/js/2.673c900e.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/portfolio/static/js/2.6c56af72.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.673c900e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "70a3644b46621cbd5e0c",
-    "url": "/portfolio/static/js/main.25034ee2.chunk.js"
+    "revision": "31661d74e945498c08b8",
+    "url": "/portfolio/static/js/main.1ac3906a.chunk.js"
   },
   {
     "revision": "6c1d3ad26a766dc494c1",
@@ -86,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d6600f3833d0c13cc2e83cd8079ee03b",
     "url": "/portfolio/static/media/Udemy_Unity_2D_Course.d6600f38.jpg"
+  },
+  {
+    "revision": "4780cd26255c12f1558529ce320e3d8c",
+    "url": "/portfolio/static/media/Unity3D_Essentials_JUL2020.4780cd26.png"
   },
   {
     "revision": "153762cfb3007108140ab359487df515",
