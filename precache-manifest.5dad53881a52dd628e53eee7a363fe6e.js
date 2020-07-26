@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "adad44cae1292f04d2b0484658c430fb",
+    "revision": "e76fa6f3de78ef1d5c0dab9068f0fd66",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "e6def963c17a6b58e601",
+    "revision": "72351c371d7dcd172e43",
     "url": "/portfolio/static/css/2.397eae54.chunk.css"
   },
   {
-    "revision": "cb53a6728803fd188b6a",
+    "revision": "70a3644b46621cbd5e0c",
     "url": "/portfolio/static/css/main.b37e4f16.chunk.css"
   },
   {
-    "revision": "e6def963c17a6b58e601",
-    "url": "/portfolio/static/js/2.25a0e4d9.chunk.js"
+    "revision": "72351c371d7dcd172e43",
+    "url": "/portfolio/static/js/2.6c56af72.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/portfolio/static/js/2.25a0e4d9.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.6c56af72.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cb53a6728803fd188b6a",
-    "url": "/portfolio/static/js/main.7bbb8d1e.chunk.js"
+    "revision": "70a3644b46621cbd5e0c",
+    "url": "/portfolio/static/js/main.25034ee2.chunk.js"
   },
   {
     "revision": "6c1d3ad26a766dc494c1",
@@ -74,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "82ae60b63e606d58d5bd6a2ce61593df",
     "url": "/portfolio/static/media/PowershellPrompt.82ae60b6.jpg"
+  },
+  {
+    "revision": "d3fd7eb2f4cd6878644637e4544a5643",
+    "url": "/portfolio/static/media/React_HandleClick.d3fd7eb2.PNG"
   },
   {
     "revision": "77a85821b0f884a5f7e4bc3c677cea95",

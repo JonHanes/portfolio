@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b37e4f16.chunk.css",
-    "main.js": "/portfolio/static/js/main.7bbb8d1e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7bbb8d1e.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.25034ee2.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.25034ee2.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.d597d31e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.d597d31e.js.map",
     "static/css/2.397eae54.chunk.css": "/portfolio/static/css/2.397eae54.chunk.css",
-    "static/js/2.25a0e4d9.chunk.js": "/portfolio/static/js/2.25a0e4d9.chunk.js",
-    "static/js/2.25a0e4d9.chunk.js.map": "/portfolio/static/js/2.25a0e4d9.chunk.js.map",
+    "static/js/2.6c56af72.chunk.js": "/portfolio/static/js/2.6c56af72.chunk.js",
+    "static/js/2.6c56af72.chunk.js.map": "/portfolio/static/js/2.6c56af72.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.f33a38214baed1e931789bdf3970f5d0.js": "/portfolio/precache-manifest.f33a38214baed1e931789bdf3970f5d0.js",
+    "precache-manifest.5dad53881a52dd628e53eee7a363fe6e.js": "/portfolio/precache-manifest.5dad53881a52dd628e53eee7a363fe6e.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.397eae54.chunk.css.map": "/portfolio/static/css/2.397eae54.chunk.css.map",
     "static/css/main.b37e4f16.chunk.css.map": "/portfolio/static/css/main.b37e4f16.chunk.css.map",
-    "static/js/2.25a0e4d9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.25a0e4d9.chunk.js.LICENSE.txt",
+    "static/js/2.6c56af72.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6c56af72.chunk.js.LICENSE.txt",
     "static/media/ApartmentImg.png": "/portfolio/static/media/ApartmentImg.9385b3cf.png",
     "static/media/CPP-PB-JUN2019.png": "/portfolio/static/media/CPP-PB-JUN2019.de32bece.png",
     "static/media/CS-ADV-JAN2020.png": "/portfolio/static/media/CS-ADV-JAN2020.7babf186.png",
@@ -26,6 +26,7 @@
     "static/media/JS_Interpolation.PNG": "/portfolio/static/media/JS_Interpolation.b505bd38.PNG",
     "static/media/PackageManager.jpg": "/portfolio/static/media/PackageManager.98aaf6c4.jpg",
     "static/media/PowershellPrompt.jpg": "/portfolio/static/media/PowershellPrompt.82ae60b6.jpg",
+    "static/media/React_HandleClick.PNG": "/portfolio/static/media/React_HandleClick.d3fd7eb2.PNG",
     "static/media/SelfImage2.jpg": "/portfolio/static/media/SelfImage2.77a85821.jpg",
     "static/media/Udemy_Unity_2D_Course.jpg": "/portfolio/static/media/Udemy_Unity_2D_Course.d6600f38.jpg",
     "static/media/UnityLogo.png": "/portfolio/static/media/UnityLogo.153762cf.png",
@@ -43,8 +44,8 @@
   "entrypoints": [
     "static/js/runtime-main.d597d31e.js",
     "static/css/2.397eae54.chunk.css",
-    "static/js/2.25a0e4d9.chunk.js",
+    "static/js/2.6c56af72.chunk.js",
     "static/css/main.b37e4f16.chunk.css",
-    "static/js/main.7bbb8d1e.chunk.js"
+    "static/js/main.25034ee2.chunk.js"
   ]
 }
