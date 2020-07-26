@@ -73,6 +73,13 @@ function CS_CSharp(props) {
             <li>Note: You will need to install some Microsoft packages to initialize the migrations. <br/>[For example Microsoft.EntityFrameworkCore.SqlServer & Microsoft.EntityFrameworkCore.Design]</li>
             <li>Create the appropriate classes in your IDE.</li>
             <Image src={VSProjectFilesImg} thumbnail/>
+            <li>When creating the DBContext for the DB, derive from the DbContext class and ensure you are overriding the OnConfiguring and OnModelCreating methods.<br/>
+            This will let you add more constraints to your columns, as data annotations cannot do everything.</li>
+            <li>You will also need to list the DBSets in the DBContext, following this convention. <br/>
+            <i>public DbSet{"<"}District{">"} Districts {"{ get; set; }"}</i></li>
+            <li>The OnConfiguring method should contain something like the following.<br/>
+            <i>if (!optionsBuilder.IsConfigured) {"{optionsBuilder.UseSqlServer('Server=[SERVERNAME];Database=[DBNAME];[AUTH METHOD - FOR EXAMPLE Integrated Security=True]');}"}</i>
+            </li>
             <li>Use the package manager console to perform the next operations.<br/>
             You can find the package manager with the search function.</li>
             <Image src={PackageManagerImg} thumbnail/>
@@ -85,7 +92,7 @@ function CS_CSharp(props) {
             <li>You might receive errors here, but the console should point out what needs to be changed.<br/>
             A typical issue might relate to delete behaviour, as the database might not know how to perform when deleting entities.<br/>
             You can use .OnDelete(DeleteBehaviour.Restrict) to deal with this in the model builder.
-            </li>
+            </li>   
         </ul>
 
         <b>Database-First</b><br/>

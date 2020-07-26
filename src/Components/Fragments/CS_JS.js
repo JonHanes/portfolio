@@ -60,6 +60,7 @@ function CS_JS(props) {
             <li>The best practice with Dotenv is to keep only environment values that are not sensitive here.<br/>
             If sensitive data needs to be input here, it is best to send your clients a sample .env file that they need to fill in with their own information.</li>
         </ul>
+        
         <br/><br/>
     </div>
     )

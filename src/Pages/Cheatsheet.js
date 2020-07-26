@@ -11,6 +11,7 @@ import JSCheatsheet from '../Components/Fragments/CS_JS';
 import PHPCheatsheet from '../Components/Fragments/CS_PHP';
 import MiscCheatsheet from '../Components/Fragments/CS_Misc';
 import GitHubCheatsheet from '../Components/Fragments/CS_GitHub';
+import ReactCheetsheet from '../Components/Fragments/CS_React';
 //#endregion
 
 function Cheatsheet(props) {
@@ -30,6 +31,7 @@ function Cheatsheet(props) {
                 
                 <CSharpCheatsheet/>
                 <JSCheatsheet/>
+                <ReactCheetsheet/>
                 <PHPCheatsheet/>
                 <MiscCheatsheet/>
                 <GitHubCheatsheet/>
