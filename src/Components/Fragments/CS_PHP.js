@@ -4,6 +4,9 @@ import Image from 'react-bootstrap/Image';
 //#region Internal Dependencies
 import PHP_Artisan_Iteration from '../../Assets/Images/Snippets/PHP_Artisan_Iteration.png';
 import Laravel_CreateRecord from '../../Assets/Images/Snippets/Laravel_Controller_CreateRecord.PNG';
+import Laravel_FormValidation from '../../Assets/Images/Snippets/Laravel_FormValidation.PNG';
+import Laravel_ErrorPrinting from '../../Assets/Images/Snippets/Laravel_ErrorPrinting.PNG';
+//Laravel_FormValidation
 //#endregion
 
 function CS_PHP(props) {
@@ -105,6 +108,34 @@ function CS_PHP(props) {
                     This function prints out all the information received from the POST-statement.</li>
                     <li>Saving the record should work something like this.<br/>
                     <Image src={Laravel_CreateRecord} thumbnail/></li>
+            </ul>
+
+            <b className="quaternaryTopic">Request handling</b>
+            <ul>
+                <li>In order to validate the data sent through the form to the controller, the store method has to handle the request.<br/>
+                You can do this with the <b>$[requestVarName]-{">"}validate</b> method, much like shown below<br/>
+                <Image src={Laravel_FormValidation} thumbnail/>
+                <li>Printing errors can be done through the help of the <b>ShareErrorsFromSession</b> middleware.<br/>
+                You can print out the errors on the page using the example function.<br/>
+                <Image src={Laravel_ErrorPrinting} thumbnail/>
+                </li>
+                <li>You can create a request template by using <b>php artisan make:request [REQNAME - for example StoreAccount]</b><br/>
+                This class will allow you to check for your defined data constraints inside its own class, by defining them in the <b>rules</b> array.<br/>
+                You can then use these rules in your controller by using the request template, and passing the request template to the function.<br/>
+                <br/>Example:<br/>
+                <i>{"public function store(StoreAccount $req) {$validatedDate = $req->validated($req);}"}</i>
+                <br/>Here, the template StoreAccount is being passed in as a parameter, and you can refer to the rules defined there by just calling the <b>validated</b> method.
+                </li></li>
+                </ul>
+                <ul>
+                <b className="quinaryTopic">Saving records</b>
+                <li>Using the method of storing the request in a template, we can shorten the creation of the new instance by using the static methods present in the Model class.<br/>
+                <b>{"$newAcct = Account::create($validatedData);"}</b><br/>
+                With this method, you do not have to save the changes as this is performed on the Model.
+                </li>
+                <li>Please note that you will need to provide an indication as to which properties in the given class are fillable.<br/>
+                <i>protected $fillable = [[FillableCol1], [FillableCol2]]</i></li>
+            
             </ul>
             </div> {/*PHPArtisan Ends*/}
 
