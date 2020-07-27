@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c903273a29e8a2c43141b14bce73d4d5",
+    "revision": "3c9e2f919c1d307754ca112a5d1a445f",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "48b75e9c0b0c3869984b",
+    "revision": "1ab5066278e45df9f64a",
     "url": "/portfolio/static/css/2.397eae54.chunk.css"
   },
   {
-    "revision": "32f3401b24afcd32f8f8",
-    "url": "/portfolio/static/css/main.057a7418.chunk.css"
+    "revision": "2600036a62ce4a93f9a6",
+    "url": "/portfolio/static/css/main.decad9f2.chunk.css"
   },
   {
-    "revision": "48b75e9c0b0c3869984b",
-    "url": "/portfolio/static/js/2.b8d33844.chunk.js"
+    "revision": "1ab5066278e45df9f64a",
+    "url": "/portfolio/static/js/2.6eab910b.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/portfolio/static/js/2.b8d33844.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.6eab910b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "32f3401b24afcd32f8f8",
-    "url": "/portfolio/static/js/main.64c8d17f.chunk.js"
+    "revision": "2600036a62ce4a93f9a6",
+    "url": "/portfolio/static/js/main.43099b22.chunk.js"
   },
   {
     "revision": "6c1d3ad26a766dc494c1",
@@ -70,6 +70,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "aab05222d209e92f1716352185c4e32c",
     "url": "/portfolio/static/media/Laravel_Controller_CreateRecord.aab05222.PNG"
+  },
+  {
+    "revision": "f81d0feb93e8503b31bf6766151a5d14",
+    "url": "/portfolio/static/media/Laravel_ErrorPrinting.f81d0feb.PNG"
+  },
+  {
+    "revision": "e7d6646e462ea25212f23e8c292eb676",
+    "url": "/portfolio/static/media/Laravel_FormValidation.e7d6646e.PNG"
   },
   {
     "revision": "98aaf6c419ecd5150837505e3e84888e",
