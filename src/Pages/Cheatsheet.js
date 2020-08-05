@@ -23,8 +23,7 @@ function Cheatsheet(props) {
                 <h4 className="explanationText">Very much a work in progress.<br/>Functions to add:<br/>
                 <ul>
                     <li>Collapsible elements [Useful when this grows in scale]</li>
-                    <li>Add styling to the divs I am currently using, at the very least add a bottom margin so that they are further apart from each other.<br/>
-                    Currently this effect is achieved using only whitespaces.</li>
+                    <li>Add styling to the divs I am currently using.</li>
                     <li>A navbar that is fixed to either side.</li>
                 </ul>
                 </h4>

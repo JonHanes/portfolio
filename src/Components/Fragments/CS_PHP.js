@@ -60,6 +60,8 @@ function CS_PHP(props) {
                 Drops the column(s) from the database upon this function being called.</li>
                 <li><b>Schema::rename</b>('studentsTeachers', 'students_teachers')<br/>
                 Allows the renaming of columns.</li>
+                <li><i>$table-{">"}integer('person_id')-{">"}<b>change()</b>-{">"}nullable();</i><br/>
+                This keyword allows you to edit existing column constraints.</li>
             </ul>
             <b className="quaternaryTopic">Model creation - Eloquent</b>
             <ul>
@@ -114,18 +116,19 @@ function CS_PHP(props) {
             <ul>
                 <li>In order to validate the data sent through the form to the controller, the store method has to handle the request.<br/>
                 You can do this with the <b>$[requestVarName]-{">"}validate</b> method, much like shown below<br/>
-                <Image src={Laravel_FormValidation} thumbnail/>
-                <li>Printing errors can be done through the help of the <b>ShareErrorsFromSession</b> middleware.<br/>
-                You can print out the errors on the page using the example function.<br/>
-                <Image src={Laravel_ErrorPrinting} thumbnail/>
+                    <Image src={Laravel_FormValidation} thumbnail/>
+                    <li>Printing errors can be done through the help of the <b>ShareErrorsFromSession</b> middleware.<br/>
+                    You can print out the errors on the page using the example function.<br/>
+                    <Image src={Laravel_ErrorPrinting} thumbnail/>
+                    </li>
+                    <li>You can create a request template by using <b>php artisan make:request [REQNAME - for example StoreAccount]</b><br/>
+                    This class will allow you to check for your defined data constraints inside its own class, by defining them in the <b>rules</b> array.<br/>
+                    You can then use these rules in your controller by using the request template, and passing the request template to the function.<br/>
+                    <br/>Example:<br/>
+                    <i>{"public function store(StoreAccount $req) {$validatedDate = $req->validated($req);}"}</i>
+                    <br/>Here, the template StoreAccount is being passed in as a parameter, and you can refer to the rules defined there by just calling the <b>validated</b> method.
+                    </li>
                 </li>
-                <li>You can create a request template by using <b>php artisan make:request [REQNAME - for example StoreAccount]</b><br/>
-                This class will allow you to check for your defined data constraints inside its own class, by defining them in the <b>rules</b> array.<br/>
-                You can then use these rules in your controller by using the request template, and passing the request template to the function.<br/>
-                <br/>Example:<br/>
-                <i>{"public function store(StoreAccount $req) {$validatedDate = $req->validated($req);}"}</i>
-                <br/>Here, the template StoreAccount is being passed in as a parameter, and you can refer to the rules defined there by just calling the <b>validated</b> method.
-                </li></li>
                 </ul>
                 <ul>
                 <b className="quinaryTopic">Saving records</b>
@@ -135,7 +138,23 @@ function CS_PHP(props) {
                 </li>
                 <li>Please note that you will need to provide an indication as to which properties in the given class are fillable.<br/>
                 <i>protected $fillable = [[FillableCol1], [FillableCol2]]</i></li>
-            
+                <b className="quinaryTopic">Editing records</b>
+                <li>This is best done by calling the <b>edit</b> function to return a form to the user.<br/>
+                This form should then be passed to the <b>update</b> method, which finds the related record by ID, and then uses the <b>fill</b>-method to enact the changes.<br/>
+                Example usage: <i>{"$acct->fill($validatedData);"}</i></li>
+                <b className="quinaryTopic">Deleting records</b>
+                <li>Deleting records can be done using the static method in the model, for example.<br/>
+                <i>Account::destroy($id)</i></li>
+                <li>However, the preferred approach is to submit a form upon the delete button being clicked, that transfers the ID to the Controller's <b>destroy</b> function.<br/>
+                The destroy function should then verify whether the record exists.<br/>
+                <i>$acct = Account::findOrFail($id)</i></li>
+                <li>After verification, you can go forward with calling <i>{"$acct->delete()"}</i></li>
+                <li>After this, it might be best to flash the status and redirect the user back a page.</li>
+            </ul>
+            <b className="quaternaryTopic">Error handling</b>
+            <ul>
+                <li>Refer to the <b>logging.php</b> to view your current settings for logging errors.</li>
+                <li>Laravel logs are stored in the <b>app/storage/logs/laravel.log</b>, and PHP logs are stored under XAMPP/Apache/logs or wherever you have your PHP installation.</li>
             </ul>
             </div> {/*PHPArtisan Ends*/}
 
@@ -190,7 +209,14 @@ function CS_PHP(props) {
                 </li>
             </ul>
             </div>  {/*Tinker DIV ends*/}
-        
+
+        <b className="quaternaryTopic">Executing raw SQL</b>
+        <ul>
+            <li>To execute a raw SQL query through php, you can try something like the following.<br/>
+            <i>{"$db = \DB::connection()->getPdo();"}</i><br/>
+            <i>{"$query = $db->prepare('"}
+            {"   SELECT * FROM accounts LIMIT 10')"}</i></li>
+        </ul>
         </div> 
     )
 }

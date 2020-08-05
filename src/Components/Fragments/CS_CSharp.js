@@ -12,6 +12,7 @@ import XML_DTO from '../../Assets/Images/Snippets/XML_DTO.PNG';
 import XML_HelperEX1 from '../../Assets/Images/Snippets/XML_HelperEX1.PNG';
 import XML_HelperEX2 from '../../Assets/Images/Snippets/XML_HelperEX2.PNG';
 import XML_HelperEX3 from '../../Assets/Images/Snippets/XML_HelperEX3.PNG';
+import EF_Relations1 from '../../Assets/Images/Snippets/EF_Relations1.PNG';
 //#endregion
 
 function CS_CSharp(props) {
@@ -76,7 +77,7 @@ function CS_CSharp(props) {
             <li>When creating the DBContext for the DB, derive from the DbContext class and ensure you are overriding the OnConfiguring and OnModelCreating methods.<br/>
             This will let you add more constraints to your columns, as data annotations cannot do everything.</li>
             <li>You will also need to list the DBSets in the DBContext, following this convention. <br/>
-            <i>public DbSet{"<"}District{">"} Districts {"{ get; set; }"}</i></li>
+            <i>{"public DbSet<District> Districts {{ get; set; }}"}</i></li>
             <li>The OnConfiguring method should contain something like the following.<br/>
             <i>if (!optionsBuilder.IsConfigured) {"{optionsBuilder.UseSqlServer('Server=[SERVERNAME];Database=[DBNAME];[AUTH METHOD - FOR EXAMPLE Integrated Security=True]');}"}</i>
             </li>
@@ -106,6 +107,16 @@ function CS_CSharp(props) {
                 <li>The previous command works if this is the local server (and using the default credentials), and the provider is as mentioned</li>
                 <li>The other parts of this command specify where the models should be created (a subfolder)</li>
         </ul>
+        <h5 className="tertiaryTopic">Database Modeling</h5>
+        <ul>
+            <li>The connection can be made between one model and another by either tying this to a foreign key and a navigational property, or by creating a collection of these models.<br/></li>
+            <li>An example of a one to many relationship provided here, in the <i>Author</i> model.<br/>
+            <i>{"public virtual ICollection<AuthorBook> AuthorsBooks{ get; set; }"}</i><br/>
+            You will have to ensure that the constructor in the Author model initializes this first however, like this.<br/>
+            <Image src={EF_Relations1} thumbnail/>
+            </li>
+        </ul>
+
         </div>
         </div>
         )
