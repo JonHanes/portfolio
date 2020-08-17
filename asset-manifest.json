@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.decad9f2.chunk.css",
-    "main.js": "/portfolio/static/js/main.40c367a9.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.40c367a9.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.d4f3e680.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d4f3e680.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.d597d31e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.d597d31e.js.map",
     "static/css/2.397eae54.chunk.css": "/portfolio/static/css/2.397eae54.chunk.css",
-    "static/js/2.5485ced0.chunk.js": "/portfolio/static/js/2.5485ced0.chunk.js",
-    "static/js/2.5485ced0.chunk.js.map": "/portfolio/static/js/2.5485ced0.chunk.js.map",
+    "static/js/2.144cbb4c.chunk.js": "/portfolio/static/js/2.144cbb4c.chunk.js",
+    "static/js/2.144cbb4c.chunk.js.map": "/portfolio/static/js/2.144cbb4c.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.187f6ab5866e8a93b4d9581de6924139.js": "/portfolio/precache-manifest.187f6ab5866e8a93b4d9581de6924139.js",
+    "precache-manifest.1428fecdadc9db21af88d1e84fad145e.js": "/portfolio/precache-manifest.1428fecdadc9db21af88d1e84fad145e.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.397eae54.chunk.css.map": "/portfolio/static/css/2.397eae54.chunk.css.map",
     "static/css/main.decad9f2.chunk.css.map": "/portfolio/static/css/main.decad9f2.chunk.css.map",
-    "static/js/2.5485ced0.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5485ced0.chunk.js.LICENSE.txt",
+    "static/js/2.144cbb4c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.144cbb4c.chunk.js.LICENSE.txt",
     "static/media/ApartmentImg.png": "/portfolio/static/media/ApartmentImg.9385b3cf.png",
     "static/media/CPP-PB-JUN2019.png": "/portfolio/static/media/CPP-PB-JUN2019.de32bece.png",
     "static/media/CS-ADV-JAN2020.png": "/portfolio/static/media/CS-ADV-JAN2020.7babf186.png",
@@ -22,6 +22,7 @@
     "static/media/CS-OOP-FEB2020.png": "/portfolio/static/media/CS-OOP-FEB2020.f555f424.png",
     "static/media/CSharpLogo.png": "/portfolio/static/media/CSharpLogo.e7b8fcd4.png",
     "static/media/EF_Relations1.PNG": "/portfolio/static/media/EF_Relations1.4b1829fb.PNG",
+    "static/media/JSON_ExportExample.PNG": "/portfolio/static/media/JSON_ExportExample.eac979e8.PNG",
     "static/media/JS_Escape.PNG": "/portfolio/static/media/JS_Escape.2660ae86.PNG",
     "static/media/JS_Express_BP.PNG": "/portfolio/static/media/JS_Express_BP.d0790fef.PNG",
     "static/media/JS_Interpolation.PNG": "/portfolio/static/media/JS_Interpolation.b505bd38.PNG",
@@ -42,6 +43,7 @@
     "static/media/XML_HelperEX1.PNG": "/portfolio/static/media/XML_HelperEX1.3b459a2f.PNG",
     "static/media/XML_HelperEX2.PNG": "/portfolio/static/media/XML_HelperEX2.a7e8fe57.PNG",
     "static/media/XML_HelperEX3.PNG": "/portfolio/static/media/XML_HelperEX3.b239eade.PNG",
+    "static/media/XML_Serializer1.PNG": "/portfolio/static/media/XML_Serializer1.7fe1acef.PNG",
     "static/media/Zenva_BuildMicro-VRGame.PNG": "/portfolio/static/media/Zenva_BuildMicro-VRGame.8f8b79fb.PNG",
     "static/media/Zenva_IntroToAR.PNG": "/portfolio/static/media/Zenva_IntroToAR.eccb9d6b.PNG",
     "static/media/Zenva_Node.js&Express_BGN.PNG": "/portfolio/static/media/Zenva_Node.js&Express_BGN.07b542fa.PNG"
@@ -49,8 +51,8 @@
   "entrypoints": [
     "static/js/runtime-main.d597d31e.js",
     "static/css/2.397eae54.chunk.css",
-    "static/js/2.5485ced0.chunk.js",
+    "static/js/2.144cbb4c.chunk.js",
     "static/css/main.decad9f2.chunk.css",
-    "static/js/main.40c367a9.chunk.js"
+    "static/js/main.d4f3e680.chunk.js"
   ]
 }
