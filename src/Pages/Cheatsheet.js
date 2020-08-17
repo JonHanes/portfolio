@@ -34,7 +34,7 @@ function Cheatsheet(props) {
                 <PHPCheatsheet/>
                 <MiscCheatsheet/>
                 <GitHubCheatsheet/>
-                
+
             </Content>
         </div>
     )

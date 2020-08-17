@@ -213,7 +213,7 @@ function CS_PHP(props) {
         <b className="quaternaryTopic">Executing raw SQL</b>
         <ul>
             <li>To execute a raw SQL query through php, you can try something like the following.<br/>
-            <i>{"$db = \DB::connection()->getPdo();"}</i><br/>
+            <i>{"$db = \\DB::connection()->getPdo();"}</i><br/>
             <i>{"$query = $db->prepare('"}
             {"   SELECT * FROM accounts LIMIT 10')"}</i></li>
         </ul>

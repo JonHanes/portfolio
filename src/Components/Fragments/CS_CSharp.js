@@ -9,10 +9,13 @@ import VS_CS_Version from '../../Assets/Images/Snippets/VS_Version_CS.PNG';
 import VS_CS_Version2 from '../../Assets/Images/Snippets/VS_Version_CS2.PNG';
 
 import XML_DTO from '../../Assets/Images/Snippets/XML_DTO.PNG';
+import XML_Serializer1 from '../../Assets/Images/Snippets/XML_Serializer1.PNG'
 import XML_HelperEX1 from '../../Assets/Images/Snippets/XML_HelperEX1.PNG';
 import XML_HelperEX2 from '../../Assets/Images/Snippets/XML_HelperEX2.PNG';
 import XML_HelperEX3 from '../../Assets/Images/Snippets/XML_HelperEX3.PNG';
 import EF_Relations1 from '../../Assets/Images/Snippets/EF_Relations1.PNG';
+
+import JSON_ExportEX1 from '../../Assets/Images/Snippets/JSON_ExportExample.PNG';
 //#endregion
 
 function CS_CSharp(props) {
@@ -31,6 +34,20 @@ function CS_CSharp(props) {
                 <li>Change the version according to the needs of your project.</li>
             </ul>
 
+        <h4 className="secondaryTopic">JSON</h4>
+            <h5 className="tertiaryTopic">Exporting JSON data from the Database</h5>
+            <ul>
+                <li>The following image shows an example of how to export data from the Database as a JSON string.<br/>
+                <Image src={JSON_ExportEX1} thumbnail/>
+                </li>
+                
+            </ul>
+            <h5 className="tertiaryTopic">JSON Conversions using a DTO.</h5>
+            <ul>
+                <li>With JSON, the format is a little more simple than with XML.</li>
+                <li><i>{"ImportEmployeeDto[] employeeDtos = JsonConvert.DeserializeObject<ImportEmployeeDto[]>(jsonString);"}</i></li>
+                <li>The jsonString argument is purely the string of text retrieved from a file.</li>
+            </ul>
         <h4 className="secondaryTopic">XML</h4>
             <h5 className="tertiaryTopic">XML Conversions using a DTO.</h5>
             <ul>
@@ -38,6 +55,12 @@ function CS_CSharp(props) {
                 <li>As for properties, you can use [XmlElement("<i>name</i>")] to tie the <i>Name</i> property inside the class.</li>
                 <Image src={XML_DTO} thumbnail/>
                 <li><i>Example provided</i></li>         
+            </ul>
+            <h5 className="tertiaryTopic">Handling complicated XML conversions.</h5>
+            <ul>
+                <li>Here's an example of a more complicated XML conversion.<br/>
+                <Image src={XML_Serializer1} thumbnail/></li>
+                <li>As noted, it's good to switch to the empty namespaces instead of letting the Serializer input the default values.</li>
             </ul>
             <h5 className="tertiaryTopic">XML Helper</h5>
                 <ul>
