@@ -13,6 +13,7 @@ import CSFUNDSEP2019 from "../Assets/Images/Certificates/CS-FUND-SEP2019.png"
 import CSADVJAN2020 from "../Assets/Images/Certificates/CS-ADV-JAN2020.png"
 import CSOOPFEB2020 from "../Assets/Images/Certificates/CS-OOP-FEB2020.png"
 import MSSQL_Basics from "../Assets/Images/Certificates/CS-DB-MSSQL-MAY2020.png"
+import CS_EF from "../Assets/Images/Certificates/CS-EF-JUL2020.png"
 import Unity3DEssentials2020 from "../Assets/Images/Certificates/Unity3D_Essentials_JUL2020.png"
 //Zenva
 import ZENVA_MICROVR from "../Assets/Images/Certificates/Zenva_BuildMicro-VRGame.PNG"
@@ -31,7 +32,7 @@ class ImageGallery extends Component {
             <div>
     
                 <h5 className="centeredText">
-                    Current Average Score: <b>6.00/6.00</b><br/>
+                    Current Average Score: <b>5.96/6.00</b><br/>
                 </h5>
     
                 <Container className="contentCentering" fluid>
@@ -68,6 +69,13 @@ class ImageGallery extends Component {
                             <i>June 2020</i></h6>
                         </div>
 
+                        <div className="gallery-imageWrapper">
+                            <Image className="gallery-smallImg" src={CS_EF} thumbnail />
+                            <h6>Entity Framework Core (5.82/6.00)<br/>
+                            <i>July 2020</i></h6>
+                        </div>
+
+                        
                         
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={Unity3DEssentials2020} thumbnail />
@@ -75,20 +83,21 @@ class ImageGallery extends Component {
                             <i>July 2020</i></h6>
                         </div>
 
+                        
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={ZENVA_MICROVR} thumbnail />
                             <h6>Zenva - Build a Micro-VR Game<br/>
                             <i>April 2020</i></h6>
                         </div>
 
+                        <br/>
+                        <br/>
+
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={ZENVA_AR_INTRO} thumbnail />
                             <h6>Zenva - Intro to Augmented Reality<br/>
                             <i>April 2020</i></h6>
                         </div>
-
-                        <br/>
-                        <br/>
 
                         <div className="gallery-imageWrapper">
                             <Image className="gallery-smallImg" src={ZENVA_NodeJS_Express_BGN} thumbnail />

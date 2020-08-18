@@ -48,12 +48,15 @@ function AboutPage(props) {
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>PHP</li>
+                <li>Laravel</li>
                 <li>MySQL DB</li>
                 <li>MS SQL DB</li>
                 <li>JavaScript</li>
                 <li>JSON</li>
                 <li>jQuery</li>
                 <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
                 <li>Bootstrap</li>
                 <li>Wordpress </li>
                 <li>Visual Studio 2019/VS Code</li>
@@ -107,7 +110,7 @@ function AboutPage(props) {
 
             <h3>Current Situation</h3>
             I am currently studying C# at Software University, Sofia.<br/>
-            At the moment, my studies are centered around the Entity Framework.<br/>
+            At the moment, my studies are centered around JS Advanced, as this is a necessary part of the C# Web Developer studies.<br/>
             You can view my current certificates on the <b>Certificates</b> page.
             
             <br/><br/>
