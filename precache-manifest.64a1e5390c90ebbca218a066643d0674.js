@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "32b1520496d40f018868c26a5131750c",
+    "revision": "32c0b92985b5409ba30cfba0cd17411c",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "13145910649c57737545",
+    "revision": "1e179ea5b9c84b278e71",
     "url": "/portfolio/static/css/2.397eae54.chunk.css"
   },
   {
-    "revision": "86ae91b92bf0e47367c0",
+    "revision": "183b3aedbc06910dab6d",
     "url": "/portfolio/static/css/main.decad9f2.chunk.css"
   },
   {
-    "revision": "13145910649c57737545",
-    "url": "/portfolio/static/js/2.144cbb4c.chunk.js"
+    "revision": "1e179ea5b9c84b278e71",
+    "url": "/portfolio/static/js/2.3ba59de3.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/portfolio/static/js/2.144cbb4c.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.3ba59de3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "86ae91b92bf0e47367c0",
-    "url": "/portfolio/static/js/main.d4f3e680.chunk.js"
+    "revision": "183b3aedbc06910dab6d",
+    "url": "/portfolio/static/js/main.801fe44f.chunk.js"
   },
   {
     "revision": "6c1d3ad26a766dc494c1",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "afd8c431ad848dcb095c15f3c922d55e",
     "url": "/portfolio/static/media/CS-DB-MSSQL-MAY2020.afd8c431.png"
+  },
+  {
+    "revision": "ae0e21aac4db6a7c5960364386238a34",
+    "url": "/portfolio/static/media/CS-EF-JUL2020.ae0e21aa.png"
   },
   {
     "revision": "e21974f10009db75a91c1c73dd2b32ea",
