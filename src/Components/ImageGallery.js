@@ -21,6 +21,7 @@ import ZENVA_MICROVR from "../Assets/Images/Certificates/Zenva_BuildMicro-VRGame
 import ZENVA_AR_INTRO from "../Assets/Images/Certificates/Zenva_IntroToAR.PNG"
 import ZENVA_NodeJS_Express_BGN from "../Assets/Images/Certificates/Zenva_Node.js&Express_BGN.PNG"
 import ZENVA_React_Webforms from "../Assets/Images/Certificates/Zenva_React_Webforms.PNG"
+import ZENVA_JS_Foundations from "../Assets/Images/Certificates/Zenva_JS_Foundations.PNG"
 //Udemy
 import UDEMY_2D_Course from "../Assets/Images/Certificates/Udemy_Unity_2D_Course.jpg"
 
@@ -183,6 +184,18 @@ class ImageGallery extends Component {
                         </div>
                         : ''
                     }
+
+                    { this.state.zenva_visible ? 
+                        <div className="gallery-imageWrapper">
+                        <Image className="gallery-smallImg" src={ZENVA_JS_Foundations} thumbnail />
+                        <h6>Zenva - JavaScript Foundations<br/>
+                        <i>August 2020</i></h6>
+                        </div>
+                        : ''
+                    }
+
+                    <br/>
+                    <br/>
 
                     { this.state.udemy_visible ? 
                         <div className="gallery-imageWrapper">
