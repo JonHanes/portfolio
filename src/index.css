@@ -178,3 +178,13 @@ code {
 .indented {
   margin-left: 4em;
 }
+
+.navBarItem {
+  margin-right: 0.8em;
+}
+
+.navBarItemDeselected {
+  margin-right: 0.8em;
+  background-color: #3c30cc !important;
+  color: grey !important;
+}
