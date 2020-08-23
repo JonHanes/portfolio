@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "742b4b53dcddce6ec959e031b32ddb3e",
+    "revision": "30a823d0c27ea26879958aa4ca4f7685",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "5b1008eb9f38ce666305",
+    "revision": "5f551f422318bad26c01",
     "url": "/portfolio/static/css/2.397eae54.chunk.css"
   },
   {
-    "revision": "1482580efa9436077171",
+    "revision": "844b63a3076e63bbd05a",
     "url": "/portfolio/static/css/main.d7d49ebc.chunk.css"
   },
   {
-    "revision": "5b1008eb9f38ce666305",
-    "url": "/portfolio/static/js/2.70c93a58.chunk.js"
+    "revision": "5f551f422318bad26c01",
+    "url": "/portfolio/static/js/2.cdd63954.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/portfolio/static/js/2.70c93a58.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.cdd63954.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1482580efa9436077171",
-    "url": "/portfolio/static/js/main.bc0a8e46.chunk.js"
+    "revision": "844b63a3076e63bbd05a",
+    "url": "/portfolio/static/js/main.df62cf7a.chunk.js"
   },
   {
     "revision": "6c1d3ad26a766dc494c1",
@@ -78,6 +78,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b505bd38a29d16e4f6df442450b3a6e7",
     "url": "/portfolio/static/media/JS_Interpolation.b505bd38.PNG"
+  },
+  {
+    "revision": "135977587c2a9ebd3e25a4ef31a46385",
+    "url": "/portfolio/static/media/JS_Prototype1.13597758.PNG"
   },
   {
     "revision": "aab05222d209e92f1716352185c4e32c",
@@ -152,12 +156,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/XML_Serializer1.7fe1acef.PNG"
   },
   {
+    "revision": "9398a253a65cbfc84acde88a018b677c",
+    "url": "/portfolio/static/media/Zenva_BS_Responsive_Web_Design.9398a253.PNG"
+  },
+  {
     "revision": "8f8b79fb7214872c79152039573f8b0b",
     "url": "/portfolio/static/media/Zenva_BuildMicro-VRGame.8f8b79fb.PNG"
   },
   {
     "revision": "eccb9d6b6e0cdb542cd91c8b2257869b",
     "url": "/portfolio/static/media/Zenva_IntroToAR.eccb9d6b.PNG"
+  },
+  {
+    "revision": "4309247fdd11814239f9e4b978eda710",
+    "url": "/portfolio/static/media/Zenva_JS_Beginner1.4309247f.PNG"
   },
   {
     "revision": "bd4fb24b89911fd00dc0beca4ee85dc6",
