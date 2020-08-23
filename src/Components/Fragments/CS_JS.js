@@ -3,6 +3,7 @@ import Image from 'react-bootstrap/Image';
 
 //#region Internal Dependencies
 import JS_Interpolation from '../../Assets/Images/Snippets/JS_Interpolation.PNG';
+import JS_Prototype from '../../Assets/Images/Snippets/JS_Prototype1.PNG';
 import JS_Express_BP from '../../Assets/Images/Snippets/JS_Express_BP.PNG';
 import JSX_Escape from '../../Assets/Images/Snippets/JS_Escape.PNG';
 //#endregion
@@ -18,6 +19,17 @@ function CS_JS(props) {
             <Image src={JS_Interpolation} thumbnail/>
             <li>More information can be found <a href="https://dmitripavlutin.com/string-interpolation-in-javascript/">here</a></li>
         </ul>
+
+        <h5 className="tertiaryTopic">JavaScript - Prototypes</h5>
+        <ul>
+            <li>Prototypes in JavaScript are meant to add additional functionality/values to an existing function, which is meant as a blueprint for creating objects.</li>
+            <li>You can add additional values to instances, but to ensure that all objects deriving from this blueprint have the same information, editing the prototype is necessary.</li>
+            <li>Example usage:<br/>
+            <i>flight.prototype.isActive = true</i></li>
+            <Image src={JS_Prototype} thumbnail/>
+            <li>Functions can also be passed to the prototype!</li>
+        </ul>
+
         <h5 className="tertiaryTopic">JSX - Ignore special characters</h5>
         <ul>
             <li>The special character can be escaped using the curly braces.</li>
