@@ -23,6 +23,7 @@ import ZENVA_NodeJS_Express_BGN from "../Assets/Images/Certificates/Zenva_Node.j
 import ZENVA_React_Webforms from "../Assets/Images/Certificates/Zenva_React_Webforms.PNG"
 import ZENVA_JS_Foundations from "../Assets/Images/Certificates/Zenva_JS_Foundations.PNG"
 import ZENVA_JS_Beginner from "../Assets/Images/Certificates/Zenva_JS_Beginner1.PNG"
+import ZENVA_Responsive_Web_Design from "../Assets/Images/Certificates/Zenva_BS_Responsive_Web_Design.PNG"
 //Udemy
 import UDEMY_2D_Course from "../Assets/Images/Certificates/Udemy_Unity_2D_Course.jpg"
 
@@ -206,6 +207,16 @@ class ImageGallery extends Component {
                         </div>
                         : ''
                     }
+
+                    { this.state.zenva_visible ? 
+                        <div className="gallery-imageWrapper">
+                        <Image className="gallery-smallImg" src={ZENVA_Responsive_Web_Design} thumbnail />
+                        <h6>Zenva - Bite-Sized Responsive Web Design<br/>
+                        <i>August 2020</i></h6>
+                        </div>
+                        : ''
+                    }
+                    
 
                     { this.state.udemy_visible ? 
                         <div className="gallery-imageWrapper">
