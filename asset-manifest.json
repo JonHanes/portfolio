@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d7d49ebc.chunk.css",
-    "main.js": "/portfolio/static/js/main.df62cf7a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.df62cf7a.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.804f2e4a.chunk.css",
+    "main.js": "/portfolio/static/js/main.1948e650.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.1948e650.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.d597d31e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.d597d31e.js.map",
     "static/css/2.397eae54.chunk.css": "/portfolio/static/css/2.397eae54.chunk.css",
-    "static/js/2.cdd63954.chunk.js": "/portfolio/static/js/2.cdd63954.chunk.js",
-    "static/js/2.cdd63954.chunk.js.map": "/portfolio/static/js/2.cdd63954.chunk.js.map",
+    "static/js/2.47e80b6c.chunk.js": "/portfolio/static/js/2.47e80b6c.chunk.js",
+    "static/js/2.47e80b6c.chunk.js.map": "/portfolio/static/js/2.47e80b6c.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.67622eabd49b2dff48eda55bfc2209d1.js": "/portfolio/precache-manifest.67622eabd49b2dff48eda55bfc2209d1.js",
+    "precache-manifest.b72bb31b111436df10207e494ee199fe.js": "/portfolio/precache-manifest.b72bb31b111436df10207e494ee199fe.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.397eae54.chunk.css.map": "/portfolio/static/css/2.397eae54.chunk.css.map",
-    "static/css/main.d7d49ebc.chunk.css.map": "/portfolio/static/css/main.d7d49ebc.chunk.css.map",
-    "static/js/2.cdd63954.chunk.js.LICENSE.txt": "/portfolio/static/js/2.cdd63954.chunk.js.LICENSE.txt",
+    "static/css/main.804f2e4a.chunk.css.map": "/portfolio/static/css/main.804f2e4a.chunk.css.map",
+    "static/js/2.47e80b6c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.47e80b6c.chunk.js.LICENSE.txt",
     "static/media/ApartmentImg.png": "/portfolio/static/media/ApartmentImg.9385b3cf.png",
     "static/media/CPP-PB-JUN2019.png": "/portfolio/static/media/CPP-PB-JUN2019.de32bece.png",
     "static/media/CS-ADV-JAN2020.png": "/portfolio/static/media/CS-ADV-JAN2020.7babf186.png",
@@ -51,14 +51,17 @@
     "static/media/Zenva_IntroToAR.PNG": "/portfolio/static/media/Zenva_IntroToAR.eccb9d6b.PNG",
     "static/media/Zenva_JS_Beginner1.PNG": "/portfolio/static/media/Zenva_JS_Beginner1.4309247f.PNG",
     "static/media/Zenva_JS_Foundations.PNG": "/portfolio/static/media/Zenva_JS_Foundations.bd4fb24b.PNG",
+    "static/media/Zenva_JavaScript_DOM_API.PNG": "/portfolio/static/media/Zenva_JavaScript_DOM_API.a0554339.PNG",
+    "static/media/Zenva_Modern_JS_ES6-9.PNG": "/portfolio/static/media/Zenva_Modern_JS_ES6-9.68fcde19.PNG",
     "static/media/Zenva_Node.js&Express_BGN.PNG": "/portfolio/static/media/Zenva_Node.js&Express_BGN.07b542fa.PNG",
+    "static/media/Zenva_Node.js_BGN.PNG": "/portfolio/static/media/Zenva_Node.js_BGN.ec6fb2ee.PNG",
     "static/media/Zenva_React_Webforms.PNG": "/portfolio/static/media/Zenva_React_Webforms.447a8b67.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.d597d31e.js",
     "static/css/2.397eae54.chunk.css",
-    "static/js/2.cdd63954.chunk.js",
-    "static/css/main.d7d49ebc.chunk.css",
-    "static/js/main.df62cf7a.chunk.js"
+    "static/js/2.47e80b6c.chunk.js",
+    "static/css/main.804f2e4a.chunk.css",
+    "static/js/main.1948e650.chunk.js"
   ]
 }
