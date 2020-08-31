@@ -24,6 +24,9 @@ import ZENVA_React_Webforms from "../Assets/Images/Certificates/Zenva_React_Webf
 import ZENVA_JS_Foundations from "../Assets/Images/Certificates/Zenva_JS_Foundations.PNG"
 import ZENVA_JS_Beginner from "../Assets/Images/Certificates/Zenva_JS_Beginner1.PNG"
 import ZENVA_Responsive_Web_Design from "../Assets/Images/Certificates/Zenva_BS_Responsive_Web_Design.PNG"
+import ZENVA_JavaScript_DOM_API from "../Assets/Images/Certificates/Zenva_JavaScript_DOM_API.PNG"
+import ZENVA_Modern_JS from "../Assets/Images/Certificates/Zenva_Modern_JS_ES6-9.PNG"
+import ZENVA_NodeJS_BGN from "../Assets/Images/Certificates/Zenva_Node.js_BGN.PNG"
 //Udemy
 import UDEMY_2D_Course from "../Assets/Images/Certificates/Udemy_Unity_2D_Course.jpg"
 
@@ -39,6 +42,8 @@ class ImageGallery extends Component {
             udemy_visible: true,
         };
     }
+
+   
 
     handleToggle(filter) {
 
@@ -64,19 +69,26 @@ class ImageGallery extends Component {
             <div>
                 <h5 className="centeredText">
                     Current Average Score: <b>5.96/6.00</b><br/>
-                </h5>
+                </h5> <br/>
 
-                {/* 
-                    Implementing this once the issues with spacing are cleared up
-                    <Navbar bg="dark" variant="dark">
-                        <Navbar.Brand href="#home">Filter</Navbar.Brand>
-                            <Nav className="mr-auto">
-                                <Button variant="primary" size="lg" className={this.state.softuni_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("SoftUni")}>SoftUni</Button>
-                                <Button variant="primary" size="lg" className={this.state.zenva_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("Zenva")}>Zenva</Button>
-                                <Button variant="primary" size="lg" className={this.state.udemy_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("Udemy")}>Udemy</Button>
-                        </Nav>   
-                    </Navbar>
-                */}
+                <h4 className="centeredText">
+                    TODO: <ul><li>Use a grid layout to space the certificates evenly instead of the current system.</li>
+                        <li>Ensure that the elements do not exceed their fractions of space.</li>
+                        </ul><br/>
+                </h4>
+
+
+
+
+                <Navbar bg="dark" variant="dark">
+                    <Navbar.Brand href="#home">Filter</Navbar.Brand>
+                        <Nav className="mr-auto">
+                            <Button variant="primary" size="lg" className={this.state.softuni_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("SoftUni")}>SoftUni</Button>
+                            <Button variant="primary" size="lg" className={this.state.zenva_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("Zenva")}>Zenva</Button>
+                            <Button variant="primary" size="lg" className={this.state.udemy_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("Udemy")}>Udemy</Button>
+                    </Nav>   
+                </Navbar>
+                
                 
                 
                 <Container className="contentCentering" fluid >
@@ -217,6 +229,32 @@ class ImageGallery extends Component {
                         : ''
                     }
                     
+                    {this.state.zenva_visible ? 
+                        <div className="gallery-imageWrapper">
+                            <Image className="gallery-smallImg" src={ZENVA_JavaScript_DOM_API} thumbnail />
+                            <h6>Zenva - Create Interactive Pages with JavaScript and the DOM API<br/>
+                            <i>August 2020</i></h6>
+                        </div>
+                    : ''}
+                        
+                    {this.state.zenva_visible ? 
+                        <div className="gallery-imageWrapper">
+                            <Image className="gallery-smallImg" src={ZENVA_Modern_JS} thumbnail />
+                            <h6>Zenva - Modern JavaScript - From ES6 to ES9<br/>
+                            <i>August 2020</i></h6>
+                        </div>
+                    : ''}
+
+                    <br/>
+                    <br/>
+
+                    {this.state.zenva_visible ? 
+                        <div className="gallery-imageWrapper">
+                            <Image className="gallery-smallImg" src={ZENVA_NodeJS_BGN} thumbnail />
+                            <h6>Zenva - Node.js For Beginners - Create Server-Side Apps with JavaScript<br/>
+                            <i>August 2020</i></h6>
+                        </div>
+                    : ''}
 
                     { this.state.udemy_visible ? 
                         <div className="gallery-imageWrapper">
@@ -225,8 +263,8 @@ class ImageGallery extends Component {
                         <i>May 2020</i></h6>
                         </div>
                         : ''
-                    }                    
-                        
+                    }                
+                           
                         <br/>
                         <p className="boldTextWithTopMargin">...and more to come as I'm still studying...</p>
                 </Container>
