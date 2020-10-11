@@ -65,8 +65,8 @@ code {
   text-align: center;
   border: 1px 1px 1px 1px grey;
   border-style: double;
-  width: 20%;
-  height: 13em;
+  width: 22%;
+  height: 17em;
 }
 
 
@@ -118,7 +118,8 @@ code {
 }
 
 .contentCentering {
-  padding: 70px 0;
+  padding-right: 8% !important;
+  padding-left: 8% !important;
   text-align: center;
 }
 

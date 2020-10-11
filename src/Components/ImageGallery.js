@@ -27,6 +27,7 @@ import ZENVA_Responsive_Web_Design from "../Assets/Images/Certificates/Zenva_BS_
 import ZENVA_JavaScript_DOM_API from "../Assets/Images/Certificates/Zenva_JavaScript_DOM_API.PNG"
 import ZENVA_Modern_JS from "../Assets/Images/Certificates/Zenva_Modern_JS_ES6-9.PNG"
 import ZENVA_NodeJS_BGN from "../Assets/Images/Certificates/Zenva_Node.js_BGN.PNG"
+import ZENVA_React_WebApps from "../Assets/Images/Certificates/Zenva_React_For_WebApps.PNG" 
 //Udemy
 import UDEMY_2D_Course from "../Assets/Images/Certificates/Udemy_Unity_2D_Course.jpg"
 
@@ -40,23 +41,120 @@ class ImageGallery extends Component {
             softuni_visible: true,
             zenva_visible: true,
             udemy_visible: true,
+            certificates: [],
+            filtered_certificates: [],
         };
     }
 
-   
+    componentDidMount() {
+
+        class Certificate {
+            constructor(title, date, img, from, score, maxScore, notes) {
+                this.title = title;
+                this.date = date;
+                this.img = img;
+                this.from = from;
+
+                //Optional
+                this.score = score != undefined ? score.toFixed(2) : undefined;
+                this.maxScore = score != undefined ? maxScore.toFixed(2) : undefined;
+                this.notes = notes;
+            }
+        }
+
+        let certificates = [];
+        
+        //SoftUni
+        const CPPPBJune2019_Cert = new Certificate('C++ Programming Basics Certificate', 'July 2019', CPPPBJune2019, 'SoftUni', 6, 6);
+        const CSFUNDSEP2019_Cert = new Certificate('C# Fundamentals Certificate', 'December 2019', CSFUNDSEP2019, 'SoftUni', 6, 6);
+        const CSADVJAN2020_Cert = new Certificate('C# Advanced Certificate', 'March 2020', CSADVJAN2020, 'SoftUni', 6, 6);
+        const CSOOPFEB2020_Cert = new Certificate('C# OOP Certificate', 'April 2020', CSOOPFEB2020, 'SoftUni', 6, 6);
+        const MSSQL_Basics_Cert = new Certificate('Databases Basics - Microsoft SQL Server', 'June 2020', MSSQL_Basics, 'SoftUni', 6, 6);
+        const CS_EF_Cert = new Certificate('Entity Framework Core', 'July 2020', CS_EF, 'SoftUni', 5.82, 6);
+        const Unity3DEssentials2020_Cert = new Certificate('Unity 3D Essentials', 'July 2020', Unity3DEssentials2020, 'SoftUni', 6, 6, 'First place');
+
+        //Zenva
+        const ZENVA_MICROVR_Cert = new Certificate('Zenva - Build a Micro-VR Game', 'April 2020', ZENVA_MICROVR, 'Zenva');
+        const ZENVA_AR_INTRO_Cert = new Certificate('Zenva - Intro to Augmented Reality', 'April 2020', ZENVA_AR_INTRO, 'Zenva');
+        const ZENVA_NodeJS_Express_BGN_Cert = new Certificate('Zenva - Node.js and Express for Beginners', 'July 2020', ZENVA_NodeJS_Express_BGN, 'Zenva');
+        const ZENVA_React_Webforms_Cert = new Certificate('Zenva - Craft Web Forms with React', 'August 2020', ZENVA_React_Webforms, 'Zenva');
+        const ZENVA_JS_Foundations_Cert = new Certificate('Zenva - JavaScript Foundations', 'August 2020', ZENVA_JS_Foundations, 'Zenva');
+        const ZENVA_JS_Beginner_Cert = new Certificate("Zenva - The Complete Beginner's JavaScript Course", 'August 2020', ZENVA_JS_Beginner, 'Zenva');
+        const ZENVA_Responsive_Web_Design_Cert = new Certificate('Zenva - Bite-Sized Responsive Web Design', 'August 2020', ZENVA_Responsive_Web_Design, 'Zenva');
+        const ZENVA_JavaScript_DOM_API_Cert = new Certificate('Zenva - Create Interactive Pages with JavaScript and the DOM API', 'August 2020', ZENVA_JavaScript_DOM_API, 'Zenva');
+        const ZENVA_Modern_JS_Cert = new Certificate('Zenva - Modern JavaScript - From ES6 to ES9', 'August 2020', ZENVA_Modern_JS, 'Zenva');
+        const ZENVA_NodeJS_BGN_Cert = new Certificate('Zenva - Node.js For Beginners - Create Server-Side Apps with JavaScript', 'August 2020', ZENVA_NodeJS_BGN, 'Zenva');
+        const ZENVA_React_WebApps_Cert = new Certificate('Zenva - Discover React for Web Applications', 'September 2020', ZENVA_React_WebApps, 'Zenva');
+
+        //Udemy
+        const UDEMY_2D_Course_Cert = new Certificate('Complete C# Unity Developer 2D', 'May 2020', UDEMY_2D_Course, 'Udemy');
+
+        certificates.push(CPPPBJune2019_Cert, CSFUNDSEP2019_Cert, CSADVJAN2020_Cert, CSOOPFEB2020_Cert, MSSQL_Basics_Cert, CS_EF_Cert, Unity3DEssentials2020_Cert);
+        certificates.push(ZENVA_MICROVR_Cert, ZENVA_AR_INTRO_Cert, ZENVA_NodeJS_Express_BGN_Cert, ZENVA_React_Webforms_Cert, ZENVA_JS_Foundations_Cert, ZENVA_JS_Beginner_Cert, ZENVA_Responsive_Web_Design_Cert, ZENVA_JavaScript_DOM_API_Cert,
+            ZENVA_Modern_JS_Cert, ZENVA_NodeJS_BGN_Cert, ZENVA_React_WebApps_Cert);
+        certificates.push(UDEMY_2D_Course_Cert);
+
+        this.setState({
+            certificates: certificates, 
+            filtered_certificates: certificates,
+        });
+    }
 
     handleToggle(filter) {
 
         switch(filter) {
             case "SoftUni":
-                this.state.softuni_visible ? this.setState({softuni_visible: false}) : this.setState({softuni_visible: true});
+                this.state.softuni_visible ? 
+                    this.setState({
+                        softuni_visible: false,
+                        filtered_certificates: this.state.filtered_certificates.filter(c => c.from != 'SoftUni')
+                    })
+                : 
+                    this.setState({
+                        softuni_visible: true,
+                        filtered_certificates: this.state.filtered_certificates.concat(this.state.certificates.filter(c => c.from == 'SoftUni')),
+                    });
                 break;
             case "Zenva":
-                this.state.zenva_visible ? this.setState({zenva_visible: false}) : this.setState({zenva_visible: true});
+                this.state.zenva_visible ? 
+                    this.setState({
+                        zenva_visible: false,
+                        filtered_certificates: this.state.filtered_certificates.filter(c => c.from != 'Zenva')
+                    }) 
+                : 
+                    this.setState({
+                        zenva_visible: true,
+                        filtered_certificates: this.state.filtered_certificates.concat(this.state.certificates.filter(c => c.from == 'Zenva')),
+                    });
                 break;
             case "Udemy":
-                this.state.udemy_visible ? this.setState({udemy_visible: false}) : this.setState({udemy_visible: true});
+                this.state.udemy_visible ? 
+                    this.setState({
+                        udemy_visible: false,
+                        filtered_certificates: this.state.filtered_certificates.filter(c => c.from != 'Udemy')
+                    }) 
+                : 
+                    this.setState({
+                        udemy_visible: true,
+                        filtered_certificates: this.state.filtered_certificates.concat(this.state.certificates.filter(c => c.from == 'Udemy')),
+                    });
                 break;
+            case "All":
+                this.state.softuni_visible && this.state.zenva_visible && this.state.udemy_visible ?
+                    this.setState({
+                        softuni_visible: false,
+                        zenva_visible: false,
+                        udemy_visible: false,
+                        filtered_certificates: [],
+                    }) 
+                :
+                    this.setState({
+                        softuni_visible: true,
+                        zenva_visible: true,
+                        udemy_visible: true,
+                        filtered_certificates: this.state.certificates,
+                    }) 
+                    
             default:
                 break;
         }
@@ -71,200 +169,26 @@ class ImageGallery extends Component {
                     Current Average Score: <b>5.96/6.00</b><br/>
                 </h5> <br/>
 
-                <h4 className="centeredText">
-                    TODO: <ul><li>Use a grid layout to space the certificates evenly instead of the current system.</li>
-                        <li>Ensure that the elements do not exceed their fractions of space.</li>
-                        </ul><br/>
-                </h4>
-
-
-
-
                 <Navbar bg="dark" variant="dark">
                     <Navbar.Brand href="#home">Filter</Navbar.Brand>
                         <Nav className="mr-auto">
+                        <Button variant="primary" size="lg" className={this.state.softuni_visible && this.state.zenva_visible && this.state.udemy_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("All")}>All</Button>
                             <Button variant="primary" size="lg" className={this.state.softuni_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("SoftUni")}>SoftUni</Button>
                             <Button variant="primary" size="lg" className={this.state.zenva_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("Zenva")}>Zenva</Button>
                             <Button variant="primary" size="lg" className={this.state.udemy_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("Udemy")}>Udemy</Button>
                     </Nav>   
                 </Navbar>
                 
-                
-                
-                <Container className="contentCentering" fluid >
-                    {this.state.softuni_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={CPPPBJune2019} thumbnail/>
-                        <h6>C++ Programming Basics Certificate (6.00/6.00) <br/>
-                        <i>July 2019</i></h6>
+                <Container className="contentCentering" fluid >                                
+                { 
+                    this.state.filtered_certificates.map(c => {
+                        return <div className="gallery-imageWrapper">
+                        <Image className="gallery-smallImg" src={c.img} thumbnail/>
+                        <h6>{c.title} {c.score != undefined ? `(${c.score}/${c.maxScore})` : ''} <br/>
+                        <i>{c.date}{c.notes ? ` - ${c.notes}` : ''}</i></h6>
                         </div>
-                        : ''
-                     }
-                        
-                    { this.state.softuni_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={CSFUNDSEP2019} thumbnail />
-                        <h6>C# Fundamentals Certificate (6.00/6.00) <br/>
-                        <i>December 2019</i></h6>
-                        </div>
-                        : ''
-                    }
-                    
-                    { this.state.softuni_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={CSADVJAN2020} thumbnail />
-                        <h6>C# Advanced Certificate (6.00/6.00) <br/>
-                        <i>March 2020</i></h6>
-                        </div>
-                        : ''
-                    }
-
-                    { this.state.softuni_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={CSOOPFEB2020} thumbnail />
-                        <h6>C# OOP Certificate (6.00/6.00) <br/>
-                        <i>April 2020</i></h6>
-                        </div>
-                        : ''
-                    }
-                    
-                    {/*Need to come up with another solution for spacing in the near future, maybe an array of all the components*/}
-                        <br/>
-                        <br/>
-
-                    { this.state.softuni_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={MSSQL_Basics} thumbnail />
-                        <h6>Databases Basics - Microsoft SQL Server (6.00/6.00)<br/>
-                        <i>June 2020</i></h6>
-                        </div>
-                        : ''
-                    }
-
-                    
-                    { this.state.softuni_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={CS_EF} thumbnail />
-                        <h6>Entity Framework Core (5.82/6.00)<br/>
-                        <i>July 2020</i></h6>
-                        </div>
-                        : ''
-                    }
-                        
-                    { this.state.softuni_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={Unity3DEssentials2020} thumbnail />
-                        <h6>Unity 3D Essentials (6.00/6.00 - First place)<br/>
-                        <i>July 2020</i></h6>
-                        </div>
-                        : ''
-                    }
-                        
-                    { this.state.zenva_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={ZENVA_MICROVR} thumbnail />
-                        <h6>Zenva - Build a Micro-VR Game<br/>
-                        <i>April 2020</i></h6>
-                        </div>
-                        : ''
-                    }
-
-                        <br/>
-                        <br/>
-
-                    { this.state.zenva_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={ZENVA_AR_INTRO} thumbnail />
-                        <h6>Zenva - Intro to Augmented Reality<br/>
-                        <i>April 2020</i></h6>
-                        </div>
-                        : ''
-                    }
-
-                    { this.state.zenva_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={ZENVA_NodeJS_Express_BGN} thumbnail />
-                        <h6>Zenva - Node.js and Express for Beginners<br/>
-                        <i>July 2020</i></h6>
-                        </div>
-                        : ''
-                    }
-
-                    { this.state.zenva_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={ZENVA_React_Webforms} thumbnail />
-                        <h6>Zenva - Craft Web Forms with React<br/>
-                        <i>August 2020</i></h6>
-                        </div>
-                        : ''
-                    }
-
-                    { this.state.zenva_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={ZENVA_JS_Foundations} thumbnail />
-                        <h6>Zenva - JavaScript Foundations<br/>
-                        <i>August 2020</i></h6>
-                        </div>
-                        : ''
-                    }
-
-                    <br/>
-                    <br/>
-
-                    { this.state.zenva_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={ZENVA_JS_Beginner} thumbnail />
-                        <h6>Zenva - The Complete Beginner's JavaScript Course<br/>
-                        <i>August 2020</i></h6>
-                        </div>
-                        : ''
-                    }
-
-                    { this.state.zenva_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={ZENVA_Responsive_Web_Design} thumbnail />
-                        <h6>Zenva - Bite-Sized Responsive Web Design<br/>
-                        <i>August 2020</i></h6>
-                        </div>
-                        : ''
-                    }
-                    
-                    {this.state.zenva_visible ? 
-                        <div className="gallery-imageWrapper">
-                            <Image className="gallery-smallImg" src={ZENVA_JavaScript_DOM_API} thumbnail />
-                            <h6>Zenva - Create Interactive Pages with JavaScript and the DOM API<br/>
-                            <i>August 2020</i></h6>
-                        </div>
-                    : ''}
-                        
-                    {this.state.zenva_visible ? 
-                        <div className="gallery-imageWrapper">
-                            <Image className="gallery-smallImg" src={ZENVA_Modern_JS} thumbnail />
-                            <h6>Zenva - Modern JavaScript - From ES6 to ES9<br/>
-                            <i>August 2020</i></h6>
-                        </div>
-                    : ''}
-
-                    <br/>
-                    <br/>
-
-                    {this.state.zenva_visible ? 
-                        <div className="gallery-imageWrapper">
-                            <Image className="gallery-smallImg" src={ZENVA_NodeJS_BGN} thumbnail />
-                            <h6>Zenva - Node.js For Beginners - Create Server-Side Apps with JavaScript<br/>
-                            <i>August 2020</i></h6>
-                        </div>
-                    : ''}
-
-                    { this.state.udemy_visible ? 
-                        <div className="gallery-imageWrapper">
-                        <Image className="gallery-smallImg" src={UDEMY_2D_Course} thumbnail />
-                        <h6>Complete C# Unity Developer 2D<br/>
-                        <i>May 2020</i></h6>
-                        </div>
-                        : ''
-                    }                
-                           
+                    })
+                }     
                         <br/>
                         <p className="boldTextWithTopMargin">...and more to come as I'm still studying...</p>
                 </Container>
