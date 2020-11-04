@@ -16,6 +16,7 @@ import CSOOPFEB2020 from "../Assets/Images/Certificates/CS-OOP-FEB2020.png"
 import MSSQL_Basics from "../Assets/Images/Certificates/CS-DB-MSSQL-MAY2020.png"
 import CS_EF from "../Assets/Images/Certificates/CS-EF-JUL2020.png"
 import Unity3DEssentials2020 from "../Assets/Images/Certificates/Unity3D_Essentials_JUL2020.png"
+import JSADVNOV2020 from "../Assets/Images/Certificates/JS-ADV-NOV2020.png"
 //Zenva
 import ZENVA_MICROVR from "../Assets/Images/Certificates/Zenva_BuildMicro-VRGame.PNG"
 import ZENVA_AR_INTRO from "../Assets/Images/Certificates/Zenva_IntroToAR.PNG"
@@ -28,6 +29,7 @@ import ZENVA_JavaScript_DOM_API from "../Assets/Images/Certificates/Zenva_JavaSc
 import ZENVA_Modern_JS from "../Assets/Images/Certificates/Zenva_Modern_JS_ES6-9.PNG"
 import ZENVA_NodeJS_BGN from "../Assets/Images/Certificates/Zenva_Node.js_BGN.PNG"
 import ZENVA_React_WebApps from "../Assets/Images/Certificates/Zenva_React_For_WebApps.PNG" 
+import ZENVA_Complete_Blender from "../Assets/Images/Certificates/Zenva_Complete_Blender.PNG" 
 //Udemy
 import UDEMY_2D_Course from "../Assets/Images/Certificates/Udemy_Unity_2D_Course.jpg"
 
@@ -72,7 +74,7 @@ class ImageGallery extends Component {
         const MSSQL_Basics_Cert = new Certificate('Databases Basics - Microsoft SQL Server', 'June 2020', MSSQL_Basics, 'SoftUni', 6, 6);
         const CS_EF_Cert = new Certificate('Entity Framework Core', 'July 2020', CS_EF, 'SoftUni', 5.82, 6);
         const Unity3DEssentials2020_Cert = new Certificate('Unity 3D Essentials', 'July 2020', Unity3DEssentials2020, 'SoftUni', 6, 6, 'First place');
-
+        const JSADVNOV2020_Cert = new Certificate('JS Advanced', 'November 2020', JSADVNOV2020, 'SoftUni', 6, 6);
         //Zenva
         const ZENVA_MICROVR_Cert = new Certificate('Zenva - Build a Micro-VR Game', 'April 2020', ZENVA_MICROVR, 'Zenva');
         const ZENVA_AR_INTRO_Cert = new Certificate('Zenva - Intro to Augmented Reality', 'April 2020', ZENVA_AR_INTRO, 'Zenva');
@@ -85,13 +87,15 @@ class ImageGallery extends Component {
         const ZENVA_Modern_JS_Cert = new Certificate('Zenva - Modern JavaScript - From ES6 to ES9', 'August 2020', ZENVA_Modern_JS, 'Zenva');
         const ZENVA_NodeJS_BGN_Cert = new Certificate('Zenva - Node.js For Beginners - Create Server-Side Apps with JavaScript', 'August 2020', ZENVA_NodeJS_BGN, 'Zenva');
         const ZENVA_React_WebApps_Cert = new Certificate('Zenva - Discover React for Web Applications', 'September 2020', ZENVA_React_WebApps, 'Zenva');
+        const ZENVA_Complete_Blender_Cert =  new Certificate('Zenva - The Complete Blender Course', 'November 2020', ZENVA_Complete_Blender, 'Zenva');
 
         //Udemy
         const UDEMY_2D_Course_Cert = new Certificate('Complete C# Unity Developer 2D', 'May 2020', UDEMY_2D_Course, 'Udemy');
 
-        certificates.push(CPPPBJune2019_Cert, CSFUNDSEP2019_Cert, CSADVJAN2020_Cert, CSOOPFEB2020_Cert, MSSQL_Basics_Cert, CS_EF_Cert, Unity3DEssentials2020_Cert);
+        certificates.push(CPPPBJune2019_Cert, CSFUNDSEP2019_Cert, CSADVJAN2020_Cert, CSOOPFEB2020_Cert, MSSQL_Basics_Cert, CS_EF_Cert, 
+            Unity3DEssentials2020_Cert, JSADVNOV2020_Cert);
         certificates.push(ZENVA_MICROVR_Cert, ZENVA_AR_INTRO_Cert, ZENVA_NodeJS_Express_BGN_Cert, ZENVA_React_Webforms_Cert, ZENVA_JS_Foundations_Cert, ZENVA_JS_Beginner_Cert, ZENVA_Responsive_Web_Design_Cert, ZENVA_JavaScript_DOM_API_Cert,
-            ZENVA_Modern_JS_Cert, ZENVA_NodeJS_BGN_Cert, ZENVA_React_WebApps_Cert);
+            ZENVA_Modern_JS_Cert, ZENVA_NodeJS_BGN_Cert, ZENVA_React_WebApps_Cert, ZENVA_Complete_Blender_Cert);
         certificates.push(UDEMY_2D_Course_Cert);
 
         this.setState({
@@ -166,7 +170,7 @@ class ImageGallery extends Component {
         return (
             <div>
                 <h5 className="centeredText">
-                    Current Average Score: <b>5.96/6.00</b><br/>
+                    Current Average Score: <b>5.97/6.00</b><br/>
                 </h5> <br/>
 
                 <Navbar bg="dark" variant="dark">
@@ -188,9 +192,10 @@ class ImageGallery extends Component {
                         <i>{c.date}{c.notes ? ` - ${c.notes}` : ''}</i></h6>
                         </div>
                     })
-                }     
-                        <br/>
-                        <p className="boldTextWithTopMargin">...and more to come as I'm still studying...</p>
+                }    
+                 
+                <br/>
+                <p className="boldTextWithTopMargin">...and more to come as I'm still studying...</p>
                 </Container>
             </div>
         )
