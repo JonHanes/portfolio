@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9f30612c.chunk.css",
-    "main.js": "/portfolio/static/js/main.c2e3c100.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c2e3c100.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.0cd20c5c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0cd20c5c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.d597d31e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.d597d31e.js.map",
     "static/css/2.397eae54.chunk.css": "/portfolio/static/css/2.397eae54.chunk.css",
-    "static/js/2.9512c0f4.chunk.js": "/portfolio/static/js/2.9512c0f4.chunk.js",
-    "static/js/2.9512c0f4.chunk.js.map": "/portfolio/static/js/2.9512c0f4.chunk.js.map",
+    "static/js/2.179a02c8.chunk.js": "/portfolio/static/js/2.179a02c8.chunk.js",
+    "static/js/2.179a02c8.chunk.js.map": "/portfolio/static/js/2.179a02c8.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.ca6dc279e1a3312ca0e6a15066a4c8a4.js": "/portfolio/precache-manifest.ca6dc279e1a3312ca0e6a15066a4c8a4.js",
+    "precache-manifest.c4ffce3de5ac0dcb70528443bc71ce32.js": "/portfolio/precache-manifest.c4ffce3de5ac0dcb70528443bc71ce32.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.397eae54.chunk.css.map": "/portfolio/static/css/2.397eae54.chunk.css.map",
     "static/css/main.9f30612c.chunk.css.map": "/portfolio/static/css/main.9f30612c.chunk.css.map",
-    "static/js/2.9512c0f4.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9512c0f4.chunk.js.LICENSE.txt",
+    "static/js/2.179a02c8.chunk.js.LICENSE.txt": "/portfolio/static/js/2.179a02c8.chunk.js.LICENSE.txt",
     "static/media/ApartmentImg.png": "/portfolio/static/media/ApartmentImg.9385b3cf.png",
     "static/media/CPP-PB-JUN2019.png": "/portfolio/static/media/CPP-PB-JUN2019.de32bece.png",
     "static/media/CS-ADV-JAN2020.png": "/portfolio/static/media/CS-ADV-JAN2020.7babf186.png",
@@ -23,6 +23,7 @@
     "static/media/CS-OOP-FEB2020.png": "/portfolio/static/media/CS-OOP-FEB2020.f555f424.png",
     "static/media/CSharpLogo.png": "/portfolio/static/media/CSharpLogo.e7b8fcd4.png",
     "static/media/EF_Relations1.PNG": "/portfolio/static/media/EF_Relations1.4b1829fb.PNG",
+    "static/media/JS-ADV-NOV2020.png": "/portfolio/static/media/JS-ADV-NOV2020.145969df.png",
     "static/media/JSON_ExportExample.PNG": "/portfolio/static/media/JSON_ExportExample.eac979e8.PNG",
     "static/media/JS_Escape.PNG": "/portfolio/static/media/JS_Escape.2660ae86.PNG",
     "static/media/JS_Express_BP.PNG": "/portfolio/static/media/JS_Express_BP.d0790fef.PNG",
@@ -48,6 +49,7 @@
     "static/media/XML_Serializer1.PNG": "/portfolio/static/media/XML_Serializer1.7fe1acef.PNG",
     "static/media/Zenva_BS_Responsive_Web_Design.PNG": "/portfolio/static/media/Zenva_BS_Responsive_Web_Design.9398a253.PNG",
     "static/media/Zenva_BuildMicro-VRGame.PNG": "/portfolio/static/media/Zenva_BuildMicro-VRGame.8f8b79fb.PNG",
+    "static/media/Zenva_Complete_Blender.PNG": "/portfolio/static/media/Zenva_Complete_Blender.db935274.PNG",
     "static/media/Zenva_IntroToAR.PNG": "/portfolio/static/media/Zenva_IntroToAR.eccb9d6b.PNG",
     "static/media/Zenva_JS_Beginner1.PNG": "/portfolio/static/media/Zenva_JS_Beginner1.4309247f.PNG",
     "static/media/Zenva_JS_Foundations.PNG": "/portfolio/static/media/Zenva_JS_Foundations.bd4fb24b.PNG",
@@ -61,8 +63,8 @@
   "entrypoints": [
     "static/js/runtime-main.d597d31e.js",
     "static/css/2.397eae54.chunk.css",
-    "static/js/2.9512c0f4.chunk.js",
+    "static/js/2.179a02c8.chunk.js",
     "static/css/main.9f30612c.chunk.css",
-    "static/js/main.c2e3c100.chunk.js"
+    "static/js/main.0cd20c5c.chunk.js"
   ]
 }

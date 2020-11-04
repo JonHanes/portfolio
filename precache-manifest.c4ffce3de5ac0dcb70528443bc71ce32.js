@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf25463fcf2e7a03d0a1c1d7afbd0839",
+    "revision": "f597fa4c63b0a6b8e1d48911e730918d",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "81107cb3741278111e1c",
+    "revision": "b9d7a36bbdf0c213318d",
     "url": "/portfolio/static/css/2.397eae54.chunk.css"
   },
   {
-    "revision": "f71f9c08a654061d092a",
+    "revision": "6c142a2e661182ac642b",
     "url": "/portfolio/static/css/main.9f30612c.chunk.css"
   },
   {
-    "revision": "81107cb3741278111e1c",
-    "url": "/portfolio/static/js/2.9512c0f4.chunk.js"
+    "revision": "b9d7a36bbdf0c213318d",
+    "url": "/portfolio/static/js/2.179a02c8.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/portfolio/static/js/2.9512c0f4.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.179a02c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f71f9c08a654061d092a",
-    "url": "/portfolio/static/js/main.c2e3c100.chunk.js"
+    "revision": "6c142a2e661182ac642b",
+    "url": "/portfolio/static/js/main.0cd20c5c.chunk.js"
   },
   {
     "revision": "6c1d3ad26a766dc494c1",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4b1829fb745812d369697109d2d9df95",
     "url": "/portfolio/static/media/EF_Relations1.4b1829fb.PNG"
+  },
+  {
+    "revision": "145969dfb99be22f96511bfdc19764e6",
+    "url": "/portfolio/static/media/JS-ADV-NOV2020.145969df.png"
   },
   {
     "revision": "eac979e8aeb5d338101b7cdae7d82ae1",
@@ -162,6 +166,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8f8b79fb7214872c79152039573f8b0b",
     "url": "/portfolio/static/media/Zenva_BuildMicro-VRGame.8f8b79fb.PNG"
+  },
+  {
+    "revision": "db9352741e3216e51cf76858a3bc7e07",
+    "url": "/portfolio/static/media/Zenva_Complete_Blender.db935274.PNG"
   },
   {
     "revision": "eccb9d6b6e0cdb542cd91c8b2257869b",
