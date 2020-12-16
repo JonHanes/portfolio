@@ -13,7 +13,8 @@ function AboutPage(props) {
             <Content>
             <h3>Who I am</h3>
             I am primarily a C#/.NET developer who had a late start.<br/>
-            Around 4 years back I took up studies with Java as part of my IT course in Finland.<br/>
+            My interest began with C#/Java with Unity, along with some very basic level of C++ with Unreal Engine.<br/>
+            After that I took up studies with Java as part of my IT course in Finland.<br/>
             I found myself having a lot of fun with learning how to program, and I began practicing outside of my studies.<br/><br/>
 
             <h3> My experience</h3>
@@ -25,7 +26,7 @@ function AboutPage(props) {
             I have also studied C++, and hope to continue these studies when I am done with all modules linked to C#.<br/>
 
             <br/>
-            I have not yet gotten into web development with C#, but I have previous experience with HTML, CSS, PHP, MySQL, JavaScript, Bootstrap and React.<br/>
+            I have not yet gotten in-depth into front-end web development with C#, but I have previous experience with HTML, CSS, PHP, MySQL, JavaScript, Bootstrap and React.<br/>
             As part of my previous studies, I have once made a database and an interface for accessing/editing this information.<br/>
             This was put into production use inside the company, and this was my first attempt at making this sort of interface.<br/>
             Before this, my knowledge of MySQL was quite limited. <br/><br/>
@@ -34,7 +35,7 @@ function AboutPage(props) {
             It was a good experience to learn about fetching and displaying data on a C# interface.<br/>
             <br/>
 
-            <b>Programming and Web Development experience</b>
+            <b>Programming and Web Development experience<br/>[Languages/Frameworks/Concepts/Etc]</b>
             <ul>
                 <li>C#</li>
                     <ul>
@@ -42,21 +43,31 @@ function AboutPage(props) {
                         <li>C# QA - TDD & NUnit Testing</li>
                         <li>ADO.NET</li>
                         <li>Entity Framework</li>
+                        <li>Blazor</li>
                     </ul>
                 <li>C++</li>
                 <li>Java</li>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>PHP</li>
-                <li>Laravel</li>
-                <li>MySQL DB</li>
-                <li>MS SQL DB</li>
+                <ul><li>Laravel</li></ul>
                 <li>JavaScript</li>
+                    <ul>
+                        <li>Mocha</li>
+                        <li>DOM Manipulation</li>
+                        <li>JS Routing (Sammy)</li>
+                    </ul>
                 <li>JSON</li>
                 <li>jQuery</li>
                 <li>React</li>
-                <li>Node.js</li>
-                <li>Express</li>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                    </ul>
+
+                <li>MySQL DB</li>
+                <li>MS SQL DB</li>
+                
                 <li>Bootstrap</li>
                 <li>Wordpress </li>
                 <li>Visual Studio 2019/VS Code</li>
@@ -83,7 +94,8 @@ function AboutPage(props) {
             Once my C++ studies start up again, I hope to find the time for Unreal Engine as well.<br/><br/>
 
             I briefly checked out Ruby, the syntax seems reasonable and I'm all for the idea of creating modules for better organization.<br/>
-            Currently trying to orient myself to learn Laravel, as well as learn more about Node.js and Express.js.
+            Currently trying to orient myself to learn Laravel, as well as learn more about Node.js and Express.js.<br/>
+            Blazor is something I found myself looking into as well, as this is something that I need for my C# courses in the future.
             <br/><br/>
 
             <h3>Customer Service Experience</h3>
@@ -110,7 +122,7 @@ function AboutPage(props) {
 
             <h3>Current Situation</h3>
             I am currently studying C# at Software University, Sofia.<br/>
-            At the moment, my studies are centered around JS Advanced, as this is a necessary part of the C# Web Developer studies.<br/>
+            At the moment, my studies are centered on the basis of HTML/CSS after completing the JS Applications course.<br/>
             You can view my current certificates on the <b>Certificates</b> page.
             
             <br/><br/>

@@ -13,6 +13,7 @@ import PHPCheatsheet from '../Components/Fragments/CS_PHP';
 import MiscCheatsheet from '../Components/Fragments/CS_Misc';
 import GitHubCheatsheet from '../Components/Fragments/CS_GitHub';
 import ReactCheetsheet from '../Components/Fragments/CS_React';
+import BlazorCheatsheet from '../Components/Fragments/CS_Blazor';
 //#endregion
 
 class Cheatsheet extends React.Component {
@@ -26,29 +27,54 @@ class Cheatsheet extends React.Component {
             php_visible: true,
             misc_visible: true,
             gh_visible: true,
+            bz_visible: true,
+            all_visible: true
         };
     }
 
     handleToggle(filter) {
 
+        //To handle this more optimized, it would be best to use setState and set the value directly according to the filter without the switch statement.
         switch(filter) {
+            case "*":
+                let toChange = true;
+                //TODO: Change logic
+                if (this.state.cs_visible) {
+                    toChange = false;
+                }
+
+                this.setState({
+                    cs_visible: toChange,
+                    js_visible: toChange,
+                    react_visible: toChange,
+                    php_visible: toChange,
+                    misc_visible: toChange,
+                    gh_visible: toChange,
+                    bz_visible: toChange,
+                    all_visible: toChange
+                });
+
+                break;
             case "C#":
-                this.state.cs_visible ? this.setState({cs_visible: false}) : this.setState({cs_visible: true});
+                this.setState({cs_visible: !this.state.cs_visible});
                 break;
             case "JS":
-                this.state.js_visible ? this.setState({js_visible: false}) : this.setState({js_visible: true});
+                this.setState({js_visible: !this.state.js_visible});
                 break;
             case "React":
-                this.state.react_visible ? this.setState({react_visible: false}) : this.setState({react_visible: true});
+                this.setState({react_visible: !this.state.react_visible});
                 break;
             case "PHP":
-                this.state.php_visible ? this.setState({php_visible: false}) : this.setState({php_visible: true});
+                this.setState({php_visible: !this.state.php_visible});
                 break;
             case "Misc":
-                this.state.misc_visible ? this.setState({misc_visible: false}) : this.setState({misc_visible: true});
+                this.setState({misc_visible: !this.state.misc_visible});
                 break;
             case "GitHub":
-                this.state.gh_visible ? this.setState({gh_visible: false}) : this.setState({gh_visible: true});
+                this.setState({gh_visible: !this.state.gh_visible});
+                break;
+            case "Blazor":
+                this.setState({bz_visible: !this.state.bz_visible});
                 break;
             default:
                 break;
@@ -65,12 +91,14 @@ class Cheatsheet extends React.Component {
                 <Navbar bg="dark" variant="dark">
                         <Navbar.Brand href="#home">Filter</Navbar.Brand>
                             <Nav className="mr-auto">
+                                <Button variant="primary" size="lg" className={this.state.all_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("*")}>All</Button>
                                 <Button variant="primary" size="lg" className={this.state.cs_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("C#")}>C#</Button>
                                 <Button variant="primary" size="lg" className={this.state.js_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("JS")}>JS</Button>
                                 <Button variant="primary" size="lg" className={this.state.react_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("React")}>React</Button>
                                 <Button variant="primary" size="lg" className={this.state.php_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("PHP")}>PHP</Button>
                                 <Button variant="primary" size="lg" className={this.state.misc_visible ? "navBarItem" : "navBarItemDeselected"} onClick={() => this.handleToggle("Misc")}>Misc</Button>
                                 <Button variant="primary" size="lg" className={this.state.gh_visible ? "navBarItem" : "navBarItemDeselected"}  onClick={() => this.handleToggle("GitHub")}>GitHub</Button>
+                                <Button variant="primary" size="lg" className={this.state.bz_visible ? "navBarItem" : "navBarItemDeselected"}  onClick={() => this.handleToggle("Blazor")}>Blazor</Button>
                         </Nav>   
                 </Navbar>
                 <Hero title={this.props.title}/>
@@ -91,7 +119,8 @@ class Cheatsheet extends React.Component {
                     {this.state.php_visible ? <PHPCheatsheet/> : ''}
                     {this.state.misc_visible ? <MiscCheatsheet/> : ''}
                     {this.state.gh_visible ? <GitHubCheatsheet/> : ''}
-    
+                    {this.state.bz_visible ? <BlazorCheatsheet/> : ''}
+
                 </Content>
             </div>
         
