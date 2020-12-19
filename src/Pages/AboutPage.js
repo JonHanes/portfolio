@@ -67,6 +67,7 @@ function AboutPage(props) {
 
                 <li>MySQL DB</li>
                 <li>MS SQL DB</li>
+                <li>PostgreSQL DB</li>
                 
                 <li>Bootstrap</li>
                 <li>Wordpress </li>
