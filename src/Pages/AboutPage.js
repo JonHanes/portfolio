@@ -42,6 +42,7 @@ function AboutPage(props) {
                         <li>C# OOP</li>
                         <li>C# QA - TDD & NUnit Testing</li>
                         <li>ADO.NET</li>
+                        <li>ASP.NET Core</li>
                         <li>Entity Framework</li>
                         <li>Blazor</li>
                     </ul>
@@ -95,7 +96,6 @@ function AboutPage(props) {
             Once my C++ studies start up again, I hope to find the time for Unreal Engine as well.<br/><br/>
 
             I briefly checked out Ruby, the syntax seems reasonable and I'm all for the idea of creating modules for better organization.<br/>
-            Currently trying to orient myself to learn Laravel, as well as learn more about Node.js and Express.js.<br/>
             Blazor is something I found myself looking into as well, as this is something that I need for my C# courses in the future.
             <br/><br/>
 
@@ -123,8 +123,9 @@ function AboutPage(props) {
 
             <h3>Current Situation</h3>
             I am currently studying C# at Software University, Sofia.<br/>
-            At the moment, my studies are centered on the basis of HTML/CSS after completing the JS Applications course.<br/>
-            You can view my current certificates on the <b>Certificates</b> page.
+            At the moment, my studies are centered on the basis of C# Web applications (ASP.NET/Blazor).<br/>
+            You can view my current certificates on the <b>Certificates</b> page.<br/>
+            Previously worked as a Software Developer with Laravel, but now trying to stick to the C# sphere.
             
             <br/><br/>
             <h3>Known languages</h3><br/>

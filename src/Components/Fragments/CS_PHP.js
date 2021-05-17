@@ -158,6 +158,20 @@ function CS_PHP(props) {
             </ul>
             </div> {/*PHPArtisan Ends*/}
 
+            <div id="relations">
+            <h5 className="tertiaryTopic">Entity Relations</h5>
+            <br/>
+
+            <b className="quaternaryTopic">One to many</b>
+            <ul>
+                <li>Creating a connection between two entities can be done using the following example command.</li>
+                <li><b>$flight-{'>'}passengers()-{'>'}save($passenger)</b>.</li>
+                <li>The following can also be done the other way around with the following example command.</li>
+                <li><b>$passenger-{'>'}flight()-{'>'}associate($flight)-{'>'}save()</b></li>
+            </ul>
+
+            </div>  {/*Relations DIV ends*/}
+
             <div id="tinker">
             <h5 className="tertiaryTopic">Tinker</h5>
             <br/>
