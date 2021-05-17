@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "59ac625dfd62843dcfd036b40683d5de",
+    "revision": "7bc7ab94706608f165b0d7247caaffdf",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "2f07393cec071218dde2",
+    "revision": "7d969404bad53479ad88",
     "url": "/portfolio/static/css/2.397eae54.chunk.css"
   },
   {
-    "revision": "14ad4fc48149fdbdeb27",
+    "revision": "55cadd04d67ea8188e11",
     "url": "/portfolio/static/css/main.9f30612c.chunk.css"
   },
   {
-    "revision": "2f07393cec071218dde2",
-    "url": "/portfolio/static/js/2.208a648d.chunk.js"
+    "revision": "7d969404bad53479ad88",
+    "url": "/portfolio/static/js/2.82d58d41.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/portfolio/static/js/2.208a648d.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.82d58d41.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "14ad4fc48149fdbdeb27",
-    "url": "/portfolio/static/js/main.dab0ecbb.chunk.js"
+    "revision": "55cadd04d67ea8188e11",
+    "url": "/portfolio/static/js/main.48e1b17c.chunk.js"
   },
   {
     "revision": "6c1d3ad26a766dc494c1",
@@ -64,8 +64,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/EF_Relations1.4b1829fb.PNG"
   },
   {
+    "revision": "c51c7c17d5bcace8914ac6e019484da4",
+    "url": "/portfolio/static/media/GameDev_Motivation_Processes.c51c7c17.png"
+  },
+  {
+    "revision": "93f91c5c4108334a8cb8d0354381565f",
+    "url": "/portfolio/static/media/GameDev_RPG_Intermediate_Unity.93f91c5c.png"
+  },
+  {
+    "revision": "62971364b4b5c3508de127e9e9dbfb1b",
+    "url": "/portfolio/static/media/GameDev_RPG_Intermediate_Unity_Dialogue_Quests.62971364.png"
+  },
+  {
+    "revision": "0000438d56864a17ba3f59a60d16753e",
+    "url": "/portfolio/static/media/GameDev_RPG_Intermediate_Unity_Inventory.0000438d.png"
+  },
+  {
+    "revision": "3b81ddae295e2e2882172623f7917d8f",
+    "url": "/portfolio/static/media/HTML-CSS-JAN2021.3b81ddae.png"
+  },
+  {
     "revision": "145969dfb99be22f96511bfdc19764e6",
     "url": "/portfolio/static/media/JS-ADV-NOV2020.145969df.png"
+  },
+  {
+    "revision": "2ead780e1a0c78d8d8ad9e7fefc4b8b9",
+    "url": "/portfolio/static/media/JS-APP-OCT2020.2ead780e.png"
   },
   {
     "revision": "eac979e8aeb5d338101b7cdae7d82ae1",
@@ -108,12 +132,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/PowershellPrompt.82ae60b6.jpg"
   },
   {
+    "revision": "0992c197b9af336f2447c8a989eb90f7",
+    "url": "/portfolio/static/media/ReactJS-MAR2021.0992c197.png"
+  },
+  {
     "revision": "d3fd7eb2f4cd6878644637e4544a5643",
     "url": "/portfolio/static/media/React_HandleClick.d3fd7eb2.PNG"
   },
   {
     "revision": "77a85821b0f884a5f7e4bc3c677cea95",
     "url": "/portfolio/static/media/SelfImage2.77a85821.jpg"
+  },
+  {
+    "revision": "1b4b7a3dec05c448815f31f89f88f5ff",
+    "url": "/portfolio/static/media/Udemy_ASP_NET_Core_Course.1b4b7a3d.jpg"
   },
   {
     "revision": "d6600f3833d0c13cc2e83cd8079ee03b",
@@ -161,50 +193,62 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "9398a253a65cbfc84acde88a018b677c",
-    "url": "/portfolio/static/media/Zenva_BS_Responsive_Web_Design.9398a253.PNG"
+    "url": "/portfolio/static/media/Zenva_BS_Responsive_Web_Design.9398a253.png"
   },
   {
     "revision": "8f8b79fb7214872c79152039573f8b0b",
-    "url": "/portfolio/static/media/Zenva_BuildMicro-VRGame.8f8b79fb.PNG"
+    "url": "/portfolio/static/media/Zenva_BuildMicro-VRGame.8f8b79fb.png"
   },
   {
     "revision": "db9352741e3216e51cf76858a3bc7e07",
-    "url": "/portfolio/static/media/Zenva_Complete_Blender.db935274.PNG"
+    "url": "/portfolio/static/media/Zenva_Complete_Blender.db935274.png"
   },
   {
     "revision": "eccb9d6b6e0cdb542cd91c8b2257869b",
-    "url": "/portfolio/static/media/Zenva_IntroToAR.eccb9d6b.PNG"
+    "url": "/portfolio/static/media/Zenva_IntroToAR.eccb9d6b.png"
+  },
+  {
+    "revision": "5dc66c6509dfe1f4cb40d6612283c381",
+    "url": "/portfolio/static/media/Zenva_Intro_to_Multiplayer_Unity.5dc66c65.png"
   },
   {
     "revision": "4309247fdd11814239f9e4b978eda710",
-    "url": "/portfolio/static/media/Zenva_JS_Beginner1.4309247f.PNG"
+    "url": "/portfolio/static/media/Zenva_JS_Beginner1.4309247f.png"
   },
   {
     "revision": "bd4fb24b89911fd00dc0beca4ee85dc6",
-    "url": "/portfolio/static/media/Zenva_JS_Foundations.bd4fb24b.PNG"
+    "url": "/portfolio/static/media/Zenva_JS_Foundations.bd4fb24b.png"
   },
   {
     "revision": "a055433946f61a8ff991e780516c31c8",
-    "url": "/portfolio/static/media/Zenva_JavaScript_DOM_API.a0554339.PNG"
+    "url": "/portfolio/static/media/Zenva_JavaScript_DOM_API.a0554339.png"
   },
   {
     "revision": "68fcde19472d92ef340b09be7d8fe42b",
-    "url": "/portfolio/static/media/Zenva_Modern_JS_ES6-9.68fcde19.PNG"
+    "url": "/portfolio/static/media/Zenva_Modern_JS_ES6-9.68fcde19.png"
   },
   {
     "revision": "07b542fa53ecc999d6e95398b5ddcefc",
-    "url": "/portfolio/static/media/Zenva_Node.js&Express_BGN.07b542fa.PNG"
+    "url": "/portfolio/static/media/Zenva_Node.js&Express_BGN.07b542fa.png"
   },
   {
     "revision": "ec6fb2ee16a0442451dd42462e3bea4c",
-    "url": "/portfolio/static/media/Zenva_Node.js_BGN.ec6fb2ee.PNG"
+    "url": "/portfolio/static/media/Zenva_Node.js_BGN.ec6fb2ee.png"
   },
   {
     "revision": "3f9b6e3bb960ef4bd169e29eabc9fba2",
-    "url": "/portfolio/static/media/Zenva_React_For_WebApps.3f9b6e3b.PNG"
+    "url": "/portfolio/static/media/Zenva_React_For_WebApps.3f9b6e3b.png"
   },
   {
     "revision": "447a8b676b894c709d8cce2b0360cb11",
-    "url": "/portfolio/static/media/Zenva_React_Webforms.447a8b67.PNG"
+    "url": "/portfolio/static/media/Zenva_React_Webforms.447a8b67.png"
+  },
+  {
+    "revision": "4bd22f3f98500872680cd8eb52070b72",
+    "url": "/portfolio/static/media/Zenva_Unity_2D_Super_Plumbers.4bd22f3f.png"
+  },
+  {
+    "revision": "8399ab9e403e8103522a1be8e22a3680",
+    "url": "/portfolio/static/media/Zenva_Unity_World_Management.8399ab9e.png"
   }
 ]);
